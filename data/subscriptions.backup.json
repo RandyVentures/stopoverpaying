@@ -1,23 +1,15 @@
 {
   "meta": {
-    "lastUpdated": "2026-01-12",
+    "lastUpdated": "2026-02-01",
     "version": "1.0",
-    "totalServices": 121,
+    "totalServices": 74,
     "categories": [
       "streaming",
-      "telecom",
+      "software",
+      "fitness",
       "utilities",
       "insurance",
-      "fitness",
-      "software",
-      "ai_tools",
-      "cloud_storage",
-      "food_delivery",
-      "vpn_security",
-      "entertainment",
-      "communication",
-      "learning",
-      "travel"
+      "telecom"
     ]
   },
   "categories": {
@@ -27,18 +19,14 @@
       "items": [
         {
           "name": "Netflix",
-          "aliases": [
-            "NETFLIX.COM",
-            "NETFLIX INC",
-            "NETFLIX"
-          ],
+          "aliases": ["NETFLIX.COM", "NETFLIX INC", "NETFLIX"],
           "typical_price": 15.49,
           "tier": "Standard",
           "savings_options": [
             {
               "method": "Switch to ad-supported tier",
               "new_price": 6.99,
-              "savings_monthly": 8.5,
+              "savings_monthly": 8.50,
               "savings_annual": 102,
               "effort": "easy",
               "link": "https://www.netflix.com/changewplan",
@@ -47,7 +35,7 @@
             },
             {
               "method": "Share Premium plan with family",
-              "new_price": 4.4,
+              "new_price": 4.40,
               "savings_monthly": 11.09,
               "savings_annual": 133,
               "effort": "medium",
@@ -69,17 +57,13 @@
         },
         {
           "name": "Spotify",
-          "aliases": [
-            "SPOTIFY",
-            "SPOTIFY USA",
-            "SPOTIFY.COM"
-          ],
+          "aliases": ["SPOTIFY", "SPOTIFY USA", "SPOTIFY.COM"],
           "typical_price": 10.99,
           "tier": "Premium Individual",
           "savings_options": [
             {
               "method": "Switch to Duo plan (share with 1 person)",
-              "new_price": 7,
+              "new_price": 7.00,
               "savings_monthly": 3.99,
               "savings_annual": 48,
               "effort": "easy",
@@ -90,7 +74,7 @@
             {
               "method": "Use student discount",
               "new_price": 5.99,
-              "savings_monthly": 5,
+              "savings_monthly": 5.00,
               "savings_annual": 60,
               "effort": "easy",
               "link": "https://www.spotify.com/us/student/",
@@ -111,18 +95,14 @@
         },
         {
           "name": "Disney Plus",
-          "aliases": [
-            "DISNEY+",
-            "DISNEYPLUS",
-            "DISNEY PLUS"
-          ],
+          "aliases": ["DISNEY+", "DISNEYPLUS", "DISNEY PLUS"],
           "typical_price": 13.99,
           "tier": "Premium",
           "savings_options": [
             {
               "method": "Switch to ad-supported tier",
               "new_price": 7.99,
-              "savings_monthly": 6,
+              "savings_monthly": 6.00,
               "savings_annual": 72,
               "effort": "easy",
               "link": "https://www.disneyplus.com/",
@@ -132,7 +112,7 @@
             {
               "method": "Bundle with Hulu",
               "new_price": 9.99,
-              "savings_monthly": 4,
+              "savings_monthly": 4.00,
               "savings_annual": 48,
               "effort": "easy",
               "link": "https://www.disneyplus.com/welcome/bundle",
@@ -143,17 +123,14 @@
         },
         {
           "name": "Hulu",
-          "aliases": [
-            "HULU",
-            "HULU.COM"
-          ],
+          "aliases": ["HULU", "HULU.COM"],
           "typical_price": 17.99,
           "tier": "No Ads",
           "savings_options": [
             {
               "method": "Switch to ad-supported plan",
               "new_price": 7.99,
-              "savings_monthly": 10,
+              "savings_monthly": 10.00,
               "savings_annual": 120,
               "effort": "easy",
               "link": "https://www.hulu.com/welcome",
@@ -163,7 +140,7 @@
             {
               "method": "Bundle with Disney+ and ESPN+",
               "new_price": 14.99,
-              "savings_monthly": 3,
+              "savings_monthly": 3.00,
               "savings_annual": 36,
               "effort": "easy",
               "link": "https://www.hulu.com/disney-bundle",
@@ -174,20 +151,14 @@
         },
         {
           "name": "Max (HBO)",
-          "aliases": [
-            "HBO",
-            "HBO MAX",
-            "HBO.COM",
-            "MAX.COM",
-            "HBOMAX"
-          ],
+          "aliases": ["HBO", "HBO MAX", "HBO.COM", "MAX.COM", "HBOMAX"],
           "typical_price": 15.99,
           "tier": "Ad-Free",
           "savings_options": [
             {
               "method": "Switch to ad-supported tier",
               "new_price": 9.99,
-              "savings_monthly": 6,
+              "savings_monthly": 6.00,
               "savings_annual": 72,
               "effort": "easy",
               "link": "https://www.max.com/",
@@ -196,7 +167,7 @@
             },
             {
               "method": "Pay annually",
-              "new_price": 12.5,
+              "new_price": 12.50,
               "savings_monthly": 3.49,
               "savings_annual": 41,
               "effort": "easy",
@@ -208,11 +179,7 @@
         },
         {
           "name": "Apple TV+",
-          "aliases": [
-            "APPLE TV",
-            "APPLE TV+",
-            "APPLETv"
-          ],
+          "aliases": ["APPLE TV", "APPLE TV+", "APPLETv"],
           "typical_price": 9.99,
           "tier": "Monthly",
           "savings_options": [
@@ -228,7 +195,7 @@
             },
             {
               "method": "Use Apple One Family and split",
-              "new_price": 5,
+              "new_price": 5.00,
               "savings_monthly": 4.99,
               "savings_annual": 60,
               "effort": "medium",
@@ -240,18 +207,14 @@
         },
         {
           "name": "Peacock",
-          "aliases": [
-            "PEACOCK",
-            "PEACOCKTV",
-            "PEACOCK TV"
-          ],
+          "aliases": ["PEACOCK", "PEACOCKTV", "PEACOCK TV"],
           "typical_price": 11.99,
           "tier": "Premium Plus",
           "savings_options": [
             {
               "method": "Switch to ad-supported plan",
               "new_price": 5.99,
-              "savings_monthly": 6,
+              "savings_monthly": 6.00,
               "savings_annual": 72,
               "effort": "easy",
               "link": "https://www.peacocktv.com/",
@@ -261,7 +224,7 @@
             {
               "method": "Pay annually",
               "new_price": 4.99,
-              "savings_monthly": 7,
+              "savings_monthly": 7.00,
               "savings_annual": 84,
               "effort": "easy",
               "link": "https://www.peacocktv.com/plans/all-monthly",
@@ -272,18 +235,14 @@
         },
         {
           "name": "Paramount+",
-          "aliases": [
-            "PARAMOUNT",
-            "PARAMOUNT+",
-            "CBS ALL ACCESS"
-          ],
+          "aliases": ["PARAMOUNT", "PARAMOUNT+", "CBS ALL ACCESS"],
           "typical_price": 11.99,
           "tier": "Paramount+ with Showtime",
           "savings_options": [
             {
               "method": "Switch to Essential plan",
               "new_price": 5.99,
-              "savings_monthly": 6,
+              "savings_monthly": 6.00,
               "savings_annual": 72,
               "effort": "easy",
               "link": "https://www.paramountplus.com/",
@@ -293,7 +252,7 @@
             {
               "method": "Pay annually",
               "new_price": 4.99,
-              "savings_monthly": 7,
+              "savings_monthly": 7.00,
               "savings_annual": 84,
               "effort": "easy",
               "link": "https://www.paramountplus.com/",
@@ -304,17 +263,13 @@
         },
         {
           "name": "YouTube Premium",
-          "aliases": [
-            "YOUTUBE PREMIUM",
-            "YOUTUBE PREM",
-            "GOOGLE YOUTUBE"
-          ],
+          "aliases": ["YOUTUBE PREMIUM", "YOUTUBE PREM", "GOOGLE YOUTUBE"],
           "typical_price": 13.99,
           "tier": "Individual",
           "savings_options": [
             {
               "method": "Family plan split with 5",
-              "new_price": 4.6,
+              "new_price": 4.60,
               "savings_monthly": 9.39,
               "savings_annual": 113,
               "effort": "medium",
@@ -325,7 +280,7 @@
             {
               "method": "Student plan",
               "new_price": 7.99,
-              "savings_monthly": 6,
+              "savings_monthly": 6.00,
               "savings_annual": 72,
               "effort": "easy",
               "link": "https://www.youtube.com/premium/student",
@@ -336,11 +291,7 @@
         },
         {
           "name": "Apple Music",
-          "aliases": [
-            "APPLE MUSIC",
-            "ITUNES",
-            "APPLE.COM/BILL"
-          ],
+          "aliases": ["APPLE MUSIC", "ITUNES", "APPLE.COM/BILL"],
           "typical_price": 10.99,
           "tier": "Individual",
           "savings_options": [
@@ -357,7 +308,7 @@
             {
               "method": "Student plan",
               "new_price": 5.99,
-              "savings_monthly": 5,
+              "savings_monthly": 5.00,
               "savings_annual": 60,
               "effort": "easy",
               "link": "https://www.apple.com/apple-music/",
@@ -368,18 +319,14 @@
         },
         {
           "name": "Amazon Music Unlimited",
-          "aliases": [
-            "AMAZON MUSIC",
-            "AMZN MUSIC",
-            "AMAZONMUSIC"
-          ],
+          "aliases": ["AMAZON MUSIC", "AMZN MUSIC", "AMAZONMUSIC"],
           "typical_price": 10.99,
           "tier": "Individual",
           "savings_options": [
             {
               "method": "Prime member discount",
               "new_price": 9.99,
-              "savings_monthly": 1,
+              "savings_monthly": 1.00,
               "savings_annual": 12,
               "effort": "easy",
               "link": "https://music.amazon.com/",
@@ -400,11 +347,7 @@
         },
         {
           "name": "Amazon Prime",
-          "aliases": [
-            "AMAZON PRIME",
-            "AMZN PRIME",
-            "PRIME VIDEO"
-          ],
+          "aliases": ["AMAZON PRIME", "AMZN PRIME", "PRIME VIDEO"],
           "typical_price": 14.99,
           "tier": "Monthly",
           "savings_options": [
@@ -421,7 +364,7 @@
             {
               "method": "Use Prime Student",
               "new_price": 7.49,
-              "savings_monthly": 7.5,
+              "savings_monthly": 7.50,
               "savings_annual": 90,
               "effort": "easy",
               "link": "https://www.amazon.com/prime/student",
@@ -432,11 +375,7 @@
         },
         {
           "name": "ESPN+",
-          "aliases": [
-            "ESPN+",
-            "ESPN PLUS",
-            "ESPN"
-          ],
+          "aliases": ["ESPN+", "ESPN PLUS", "ESPN"],
           "typical_price": 10.99,
           "tier": "Monthly",
           "savings_options": [
@@ -451,79 +390,6 @@
               "instructions": "Annual plan is $109.99/year (~$9.17/mo)"
             }
           ]
-        },
-        {
-          "name": "Discovery+",
-          "aliases": [
-            "DISCOVERY",
-            "DISCOVERY+",
-            "DISCOVERY PLUS"
-          ],
-          "typical_price": 6.99,
-          "tier": "Ad-free",
-          "savings_options": [
-            {
-              "method": "Switch to ad-supported",
-              "new_price": 4.99,
-              "savings_monthly": 2,
-              "savings_annual": 24,
-              "effort": "easy",
-              "link": "https://www.discoveryplus.com/",
-              "affiliate": false,
-              "instructions": "Ad-supported plan is .99/mo"
-            },
-            {
-              "method": "Bundle with Hulu",
-              "new_price": 2.99,
-              "savings_monthly": 4,
-              "savings_annual": 48,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Discovery+ is .99/mo when bundled with Hulu"
-            },
-            {
-              "method": "Annual plan",
-              "new_price": 5.83,
-              "savings_monthly": 1.16,
-              "savings_annual": 14,
-              "effort": "easy",
-              "link": "https://www.discoveryplus.com/",
-              "affiliate": false,
-              "instructions": "Annual ad-free is 9.99/year (~.83/mo)"
-            }
-          ]
-        },
-        {
-          "name": "Crunchyroll",
-          "aliases": [
-            "CRUNCHYROLL",
-            "CRUNCHYROLL PREMIUM"
-          ],
-          "typical_price": 7.99,
-          "tier": "Fan",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 6.66,
-              "savings_monthly": 1.33,
-              "savings_annual": 16,
-              "effort": "easy",
-              "link": "https://www.crunchyroll.com/",
-              "affiliate": false,
-              "instructions": "Annual plan is 9.99/year (~.66/mo) vs .99/mo"
-            },
-            {
-              "method": "Use free tier with ads",
-              "new_price": 0,
-              "savings_monthly": 7.99,
-              "savings_annual": 96,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Free tier has 1-week delay and ads but includes most content"
-            }
-          ]
         }
       ]
     },
@@ -533,11 +399,7 @@
       "items": [
         {
           "name": "Verizon Wireless",
-          "aliases": [
-            "VERIZON",
-            "VERIZON WIRELESS",
-            "VZW"
-          ],
+          "aliases": ["VERIZON", "VERIZON WIRELESS", "VZW"],
           "typical_price": 85,
           "tier": "Unlimited",
           "savings_options": [
@@ -577,11 +439,7 @@
         },
         {
           "name": "Comcast Xfinity",
-          "aliases": [
-            "COMCAST",
-            "XFINITY",
-            "COMCAST CABLE"
-          ],
+          "aliases": ["COMCAST", "XFINITY", "COMCAST CABLE"],
           "typical_price": 89,
           "tier": "300 Mbps Internet",
           "savings_options": [
@@ -609,11 +467,7 @@
         },
         {
           "name": "AT&T Wireless",
-          "aliases": [
-            "ATT",
-            "AT&T",
-            "AT&T WIRELESS"
-          ],
+          "aliases": ["ATT", "AT&T", "AT&T WIRELESS"],
           "typical_price": 75,
           "tier": "Unlimited",
           "savings_options": [
@@ -632,11 +486,7 @@
         },
         {
           "name": "T-Mobile",
-          "aliases": [
-            "T-MOBILE",
-            "TMOBILE",
-            "TMO"
-          ],
+          "aliases": ["T-MOBILE", "TMOBILE", "TMO"],
           "typical_price": 80,
           "tier": "Unlimited",
           "savings_options": [
@@ -665,10 +515,7 @@
         },
         {
           "name": "Sprint",
-          "aliases": [
-            "SPRINT",
-            "SPRINT PCS"
-          ],
+          "aliases": ["SPRINT", "SPRINT PCS"],
           "typical_price": 70,
           "tier": "Unlimited",
           "savings_options": [
@@ -697,10 +544,7 @@
         },
         {
           "name": "Cricket Wireless",
-          "aliases": [
-            "CRICKET",
-            "CRICKET WIRELESS"
-          ],
+          "aliases": ["CRICKET", "CRICKET WIRELESS"],
           "typical_price": 55,
           "tier": "Unlimited",
           "savings_options": [
@@ -728,10 +572,7 @@
         },
         {
           "name": "Boost Mobile",
-          "aliases": [
-            "BOOST",
-            "BOOST MOBILE"
-          ],
+          "aliases": ["BOOST", "BOOST MOBILE"],
           "typical_price": 50,
           "tier": "Unlimited",
           "savings_options": [
@@ -749,11 +590,7 @@
         },
         {
           "name": "Spectrum Internet",
-          "aliases": [
-            "SPECTRUM",
-            "CHARTER",
-            "SPECTRUM INTERNET"
-          ],
+          "aliases": ["SPECTRUM", "CHARTER", "SPECTRUM INTERNET"],
           "typical_price": 79.99,
           "tier": "300 Mbps",
           "savings_options": [
@@ -781,11 +618,7 @@
         },
         {
           "name": "Cox Communications",
-          "aliases": [
-            "COX",
-            "COX COMM",
-            "COX INTERNET"
-          ],
+          "aliases": ["COX", "COX COMM", "COX INTERNET"],
           "typical_price": 99,
           "tier": "500 Mbps",
           "savings_options": [
@@ -813,11 +646,7 @@
         },
         {
           "name": "AT&T Internet",
-          "aliases": [
-            "AT&T INTERNET",
-            "ATT INTERNET",
-            "U-VERSE"
-          ],
+          "aliases": ["AT&T INTERNET", "ATT INTERNET", "U-VERSE"],
           "typical_price": 80,
           "tier": "Fiber 300",
           "savings_options": [
@@ -835,10 +664,7 @@
         },
         {
           "name": "Mint Mobile",
-          "aliases": [
-            "MINT",
-            "MINT MOBILE"
-          ],
+          "aliases": ["MINT", "MINT MOBILE"],
           "typical_price": 30,
           "tier": "10GB Monthly",
           "savings_options": [
@@ -857,10 +683,7 @@
         },
         {
           "name": "Visible",
-          "aliases": [
-            "VISIBLE",
-            "VISIBLE MOBILE"
-          ],
+          "aliases": ["VISIBLE", "VISIBLE MOBILE"],
           "typical_price": 35,
           "tier": "Visible+",
           "savings_options": [
@@ -879,10 +702,7 @@
         },
         {
           "name": "Google Fi",
-          "aliases": [
-            "GOOGLE FI",
-            "FI WIRELESS"
-          ],
+          "aliases": ["GOOGLE FI", "FI WIRELESS"],
           "typical_price": 50,
           "tier": "Simply Unlimited",
           "savings_options": [
@@ -900,11 +720,7 @@
         },
         {
           "name": "US Cellular",
-          "aliases": [
-            "US CELLULAR",
-            "U.S. CELLULAR",
-            "USCC"
-          ],
+          "aliases": ["US CELLULAR", "U.S. CELLULAR", "USCC"],
           "typical_price": 70,
           "tier": "Unlimited",
           "savings_options": [
@@ -933,11 +749,7 @@
         },
         {
           "name": "Metro by T-Mobile",
-          "aliases": [
-            "METRO",
-            "METROPCS",
-            "METRO BY T-MOBILE"
-          ],
+          "aliases": ["METRO", "METROPCS", "METRO BY T-MOBILE"],
           "typical_price": 50,
           "tier": "Unlimited",
           "savings_options": [
@@ -961,12 +773,7 @@
       "items": [
         {
           "name": "Electric Bill",
-          "aliases": [
-            "ELECTRIC",
-            "POWER",
-            "ENERGY",
-            "UTILITY"
-          ],
+          "aliases": ["ELECTRIC", "POWER", "ENERGY", "UTILITY"],
           "typical_price": 150,
           "tier": "Average household",
           "savings_options": [
@@ -1006,11 +813,7 @@
         },
         {
           "name": "Gas Bill",
-          "aliases": [
-            "GAS",
-            "NATURAL GAS",
-            "GAS UTILITY"
-          ],
+          "aliases": ["GAS", "NATURAL GAS", "GAS UTILITY"],
           "typical_price": 80,
           "tier": "Average household",
           "savings_options": [
@@ -1038,11 +841,7 @@
         },
         {
           "name": "Water Bill",
-          "aliases": [
-            "WATER",
-            "WATER UTILITY",
-            "WTR"
-          ],
+          "aliases": ["WATER", "WATER UTILITY", "WTR"],
           "typical_price": 60,
           "tier": "Average household",
           "savings_options": [
@@ -1070,11 +869,7 @@
         },
         {
           "name": "Trash & Recycling",
-          "aliases": [
-            "TRASH",
-            "RECYCLING",
-            "WASTE"
-          ],
+          "aliases": ["TRASH", "RECYCLING", "WASTE"],
           "typical_price": 35,
           "tier": "Standard pickup",
           "savings_options": [
@@ -1102,11 +897,7 @@
         },
         {
           "name": "Sewer Bill",
-          "aliases": [
-            "SEWER",
-            "SEWER UTILITY",
-            "WASTEWATER"
-          ],
+          "aliases": ["SEWER", "SEWER UTILITY", "WASTEWATER"],
           "typical_price": 45,
           "tier": "Average household",
           "savings_options": [
@@ -1140,14 +931,7 @@
       "items": [
         {
           "name": "Car Insurance",
-          "aliases": [
-            "AUTO INSURANCE",
-            "CAR INSURANCE",
-            "GEICO",
-            "STATE FARM",
-            "PROGRESSIVE",
-            "ALLSTATE"
-          ],
+          "aliases": ["AUTO INSURANCE", "CAR INSURANCE", "GEICO", "STATE FARM", "PROGRESSIVE", "ALLSTATE"],
           "typical_price": 150,
           "tier": "Full coverage",
           "savings_options": [
@@ -1186,11 +970,7 @@
         },
         {
           "name": "Home Insurance",
-          "aliases": [
-            "HOME INSURANCE",
-            "HOMEOWNERS",
-            "HO INSURANCE"
-          ],
+          "aliases": ["HOME INSURANCE", "HOMEOWNERS", "HO INSURANCE"],
           "typical_price": 150,
           "tier": "Standard",
           "savings_options": [
@@ -1219,11 +999,7 @@
         },
         {
           "name": "Renters Insurance",
-          "aliases": [
-            "RENTERS INSURANCE",
-            "RENTER",
-            "TENANT INSURANCE"
-          ],
+          "aliases": ["RENTERS INSURANCE", "RENTER", "TENANT INSURANCE"],
           "typical_price": 20,
           "tier": "Standard",
           "savings_options": [
@@ -1251,11 +1027,7 @@
         },
         {
           "name": "Life Insurance",
-          "aliases": [
-            "LIFE INSURANCE",
-            "TERM LIFE",
-            "WHOLE LIFE"
-          ],
+          "aliases": ["LIFE INSURANCE", "TERM LIFE", "WHOLE LIFE"],
           "typical_price": 45,
           "tier": "Term",
           "savings_options": [
@@ -1284,11 +1056,7 @@
         },
         {
           "name": "Pet Insurance",
-          "aliases": [
-            "PET INSURANCE",
-            "PETPLAN",
-            "TRUPANION"
-          ],
+          "aliases": ["PET INSURANCE", "PETPLAN", "TRUPANION"],
           "typical_price": 45,
           "tier": "Accident + illness",
           "savings_options": [
@@ -1316,11 +1084,7 @@
         },
         {
           "name": "Health Insurance",
-          "aliases": [
-            "HEALTH INSURANCE",
-            "MEDICAL",
-            "ACA"
-          ],
+          "aliases": ["HEALTH INSURANCE", "MEDICAL", "ACA"],
           "typical_price": 450,
           "tier": "Individual",
           "savings_options": [
@@ -1354,11 +1118,7 @@
       "items": [
         {
           "name": "Planet Fitness",
-          "aliases": [
-            "PLANET FITNESS",
-            "PLANET FIT",
-            "PF"
-          ],
+          "aliases": ["PLANET FITNESS", "PLANET FIT", "PF"],
           "typical_price": 24.99,
           "tier": "Black Card",
           "savings_options": [
@@ -1376,10 +1136,7 @@
         },
         {
           "name": "LA Fitness",
-          "aliases": [
-            "LA FITNESS",
-            "LA FIT"
-          ],
+          "aliases": ["LA FITNESS", "LA FIT"],
           "typical_price": 49.99,
           "tier": "Monthly",
           "savings_options": [
@@ -1407,11 +1164,7 @@
         },
         {
           "name": "24 Hour Fitness",
-          "aliases": [
-            "24 HOUR",
-            "24 HOUR FITNESS",
-            "24HR FITNESS"
-          ],
+          "aliases": ["24 HOUR", "24 HOUR FITNESS", "24HR FITNESS"],
           "typical_price": 49.99,
           "tier": "Monthly",
           "savings_options": [
@@ -1439,10 +1192,7 @@
         },
         {
           "name": "Crunch Fitness",
-          "aliases": [
-            "CRUNCH",
-            "CRUNCH FITNESS"
-          ],
+          "aliases": ["CRUNCH", "CRUNCH FITNESS"],
           "typical_price": 39.99,
           "tier": "Peak",
           "savings_options": [
@@ -1460,9 +1210,7 @@
         },
         {
           "name": "Equinox",
-          "aliases": [
-            "EQUINOX"
-          ],
+          "aliases": ["EQUINOX"],
           "typical_price": 250,
           "tier": "All Access",
           "savings_options": [
@@ -1490,10 +1238,7 @@
         },
         {
           "name": "Orange Theory",
-          "aliases": [
-            "ORANGE THEORY",
-            "ORANGETHEORY"
-          ],
+          "aliases": ["ORANGE THEORY", "ORANGETHEORY"],
           "typical_price": 159,
           "tier": "Unlimited",
           "savings_options": [
@@ -1521,9 +1266,7 @@
         },
         {
           "name": "Peloton",
-          "aliases": [
-            "PELOTON"
-          ],
+          "aliases": ["PELOTON"],
           "typical_price": 44,
           "tier": "All-Access",
           "savings_options": [
@@ -1541,10 +1284,7 @@
         },
         {
           "name": "Anytime Fitness",
-          "aliases": [
-            "ANYTIME FITNESS",
-            "ANYTIME"
-          ],
+          "aliases": ["ANYTIME FITNESS", "ANYTIME"],
           "typical_price": 49,
           "tier": "Monthly",
           "savings_options": [
@@ -1562,9 +1302,7 @@
         },
         {
           "name": "ClassPass",
-          "aliases": [
-            "CLASSPASS"
-          ],
+          "aliases": ["CLASSPASS"],
           "typical_price": 79,
           "tier": "Standard",
           "savings_options": [
@@ -1582,10 +1320,7 @@
         },
         {
           "name": "YMCA",
-          "aliases": [
-            "YMCA",
-            "YOUNG MEN'S CHRISTIAN"
-          ],
+          "aliases": ["YMCA", "YOUNG MEN'S CHRISTIAN"],
           "typical_price": 65,
           "tier": "Adult",
           "savings_options": [
@@ -1613,10 +1348,7 @@
         },
         {
           "name": "Gold's Gym",
-          "aliases": [
-            "GOLDS GYM",
-            "GOLD'S GYM"
-          ],
+          "aliases": ["GOLDS GYM", "GOLD'S GYM"],
           "typical_price": 49.99,
           "tier": "Monthly",
           "savings_options": [
@@ -1644,10 +1376,7 @@
         },
         {
           "name": "F45 Training",
-          "aliases": [
-            "F45",
-            "F45 TRAINING"
-          ],
+          "aliases": ["F45", "F45 TRAINING"],
           "typical_price": 199,
           "tier": "Unlimited",
           "savings_options": [
@@ -1681,11 +1410,7 @@
       "items": [
         {
           "name": "Adobe Creative Cloud",
-          "aliases": [
-            "ADOBE",
-            "ADOBE CC",
-            "ADOBE CREATIVE"
-          ],
+          "aliases": ["ADOBE", "ADOBE CC", "ADOBE CREATIVE"],
           "typical_price": 59.99,
           "tier": "All Apps",
           "savings_options": [
@@ -1713,11 +1438,7 @@
         },
         {
           "name": "Microsoft 365",
-          "aliases": [
-            "MICROSOFT",
-            "OFFICE 365",
-            "MS 365"
-          ],
+          "aliases": ["MICROSOFT", "OFFICE 365", "MS 365"],
           "typical_price": 9.99,
           "tier": "Personal",
           "savings_options": [
@@ -1735,9 +1456,7 @@
         },
         {
           "name": "Dropbox",
-          "aliases": [
-            "DROPBOX"
-          ],
+          "aliases": ["DROPBOX"],
           "typical_price": 11.99,
           "tier": "Plus (2TB)",
           "savings_options": [
@@ -1765,10 +1484,7 @@
         },
         {
           "name": "Notion",
-          "aliases": [
-            "NOTION",
-            "NOTION LABS"
-          ],
+          "aliases": ["NOTION", "NOTION LABS"],
           "typical_price": 10,
           "tier": "Plus",
           "savings_options": [
@@ -1796,17 +1512,14 @@
         },
         {
           "name": "1Password",
-          "aliases": [
-            "1PASSWORD",
-            "1P"
-          ],
+          "aliases": ["1PASSWORD", "1P"],
           "typical_price": 3.99,
           "tier": "Individual",
           "savings_options": [
             {
               "method": "Pay annually",
               "new_price": 2.99,
-              "savings_monthly": 1,
+              "savings_monthly": 1.00,
               "savings_annual": 12,
               "effort": "easy",
               "link": "https://1password.com/pricing",
@@ -1815,7 +1528,7 @@
             },
             {
               "method": "Family plan split",
-              "new_price": 1.1,
+              "new_price": 1.10,
               "savings_monthly": 2.89,
               "savings_annual": 35,
               "effort": "medium",
@@ -1827,11 +1540,8 @@
         },
         {
           "name": "LastPass",
-          "aliases": [
-            "LASTPASS",
-            "LAST PASS"
-          ],
-          "typical_price": 3,
+          "aliases": ["LASTPASS", "LAST PASS"],
+          "typical_price": 3.00,
           "tier": "Premium",
           "savings_options": [
             {
@@ -1847,7 +1557,7 @@
             {
               "method": "Switch to Bitwarden",
               "new_price": 0,
-              "savings_monthly": 3,
+              "savings_monthly": 3.00,
               "savings_annual": 36,
               "effort": "medium",
               "link": "https://bitwarden.com/",
@@ -1858,16 +1568,14 @@
         },
         {
           "name": "Grammarly",
-          "aliases": [
-            "GRAMMARLY"
-          ],
-          "typical_price": 12,
+          "aliases": ["GRAMMARLY"],
+          "typical_price": 12.00,
           "tier": "Premium",
           "savings_options": [
             {
               "method": "Pay annually",
-              "new_price": 10,
-              "savings_monthly": 2,
+              "new_price": 10.00,
+              "savings_monthly": 2.00,
               "savings_annual": 24,
               "effort": "easy",
               "link": "https://www.grammarly.com/plans",
@@ -1877,7 +1585,7 @@
             {
               "method": "Use free plan",
               "new_price": 0,
-              "savings_monthly": 12,
+              "savings_monthly": 12.00,
               "savings_annual": 144,
               "effort": "easy",
               "link": "https://www.grammarly.com/",
@@ -1888,16 +1596,14 @@
         },
         {
           "name": "Canva",
-          "aliases": [
-            "CANVA"
-          ],
+          "aliases": ["CANVA"],
           "typical_price": 14.99,
           "tier": "Pro",
           "savings_options": [
             {
               "method": "Pay annually",
               "new_price": 12.99,
-              "savings_monthly": 2,
+              "savings_monthly": 2.00,
               "savings_annual": 24,
               "effort": "easy",
               "link": "https://www.canva.com/pricing/",
@@ -1918,11 +1624,7 @@
         },
         {
           "name": "ChatGPT Plus",
-          "aliases": [
-            "CHATGPT",
-            "OPENAI",
-            "CHATGPT PLUS"
-          ],
+          "aliases": ["CHATGPT", "OPENAI", "CHATGPT PLUS"],
           "typical_price": 20,
           "tier": "Plus",
           "savings_options": [
@@ -1940,10 +1642,7 @@
         },
         {
           "name": "GitHub Copilot",
-          "aliases": [
-            "GITHUB COPILOT",
-            "COPILOT"
-          ],
+          "aliases": ["GITHUB COPILOT", "COPILOT"],
           "typical_price": 10,
           "tier": "Individual",
           "savings_options": [
@@ -1961,10 +1660,7 @@
         },
         {
           "name": "Google One",
-          "aliases": [
-            "GOOGLE ONE",
-            "GOOGLE STORAGE"
-          ],
+          "aliases": ["GOOGLE ONE", "GOOGLE STORAGE"],
           "typical_price": 9.99,
           "tier": "2 TB",
           "savings_options": [
@@ -1981,7 +1677,7 @@
             {
               "method": "Downgrade to 200GB",
               "new_price": 2.99,
-              "savings_monthly": 7,
+              "savings_monthly": 7.00,
               "savings_annual": 84,
               "effort": "easy",
               "link": "https://one.google.com/",
@@ -1992,17 +1688,14 @@
         },
         {
           "name": "iCloud+",
-          "aliases": [
-            "ICLOUD",
-            "APPLE ICLOUD"
-          ],
+          "aliases": ["ICLOUD", "APPLE ICLOUD"],
           "typical_price": 2.99,
           "tier": "200GB",
           "savings_options": [
             {
               "method": "Downgrade to 50GB",
               "new_price": 0.99,
-              "savings_monthly": 2,
+              "savings_monthly": 2.00,
               "savings_annual": 24,
               "effort": "easy",
               "link": "https://www.apple.com/icloud/",
@@ -2013,17 +1706,14 @@
         },
         {
           "name": "Zoom",
-          "aliases": [
-            "ZOOM",
-            "ZOOM.US"
-          ],
+          "aliases": ["ZOOM", "ZOOM.US"],
           "typical_price": 15.99,
           "tier": "Pro",
           "savings_options": [
             {
               "method": "Pay annually",
               "new_price": 12.49,
-              "savings_monthly": 3.5,
+              "savings_monthly": 3.50,
               "savings_annual": 42,
               "effort": "easy",
               "link": "https://zoom.us/pricing",
@@ -2044,17 +1734,14 @@
         },
         {
           "name": "Slack",
-          "aliases": [
-            "SLACK",
-            "SLACK TECHNOLOGIES"
-          ],
+          "aliases": ["SLACK", "SLACK TECHNOLOGIES"],
           "typical_price": 8.75,
           "tier": "Pro",
           "savings_options": [
             {
               "method": "Pay annually",
               "new_price": 7.25,
-              "savings_monthly": 1.5,
+              "savings_monthly": 1.50,
               "savings_annual": 18,
               "effort": "easy",
               "link": "https://slack.com/pricing",
@@ -2075,11 +1762,7 @@
         },
         {
           "name": "QuickBooks Online",
-          "aliases": [
-            "QUICKBOOKS",
-            "INTUIT",
-            "QB ONLINE"
-          ],
+          "aliases": ["QUICKBOOKS", "INTUIT", "QB ONLINE"],
           "typical_price": 30,
           "tier": "Simple Start",
           "savings_options": [
@@ -2107,9 +1790,7 @@
         },
         {
           "name": "Figma",
-          "aliases": [
-            "FIGMA"
-          ],
+          "aliases": ["FIGMA"],
           "typical_price": 12,
           "tier": "Professional",
           "savings_options": [
@@ -2137,10 +1818,7 @@
         },
         {
           "name": "Miro",
-          "aliases": [
-            "MIRO",
-            "REALTIMEBOARD"
-          ],
+          "aliases": ["MIRO", "REALTIMEBOARD"],
           "typical_price": 10,
           "tier": "Starter",
           "savings_options": [
@@ -2168,9 +1846,7 @@
         },
         {
           "name": "Trello",
-          "aliases": [
-            "TRELLO"
-          ],
+          "aliases": ["TRELLO"],
           "typical_price": 5,
           "tier": "Standard",
           "savings_options": [
@@ -2198,9 +1874,7 @@
         },
         {
           "name": "Asana",
-          "aliases": [
-            "ASANA"
-          ],
+          "aliases": ["ASANA"],
           "typical_price": 10.99,
           "tier": "Premium",
           "savings_options": [
@@ -2228,9 +1902,7 @@
         },
         {
           "name": "Evernote",
-          "aliases": [
-            "EVERNOTE"
-          ],
+          "aliases": ["EVERNOTE"],
           "typical_price": 14.99,
           "tier": "Personal",
           "savings_options": [
@@ -2258,17 +1930,14 @@
         },
         {
           "name": "NordVPN",
-          "aliases": [
-            "NORDVPN",
-            "NORD"
-          ],
+          "aliases": ["NORDVPN", "NORD"],
           "typical_price": 12.99,
           "tier": "Monthly",
           "savings_options": [
             {
               "method": "Two-year plan",
               "new_price": 4.49,
-              "savings_monthly": 8.5,
+              "savings_monthly": 8.50,
               "savings_annual": 102,
               "effort": "medium",
               "link": "https://nordvpn.com/pricing/",
@@ -2279,10 +1948,7 @@
         },
         {
           "name": "ExpressVPN",
-          "aliases": [
-            "EXPRESSVPN",
-            "EXPRESS VPN"
-          ],
+          "aliases": ["EXPRESSVPN", "EXPRESS VPN"],
           "typical_price": 12.95,
           "tier": "Monthly",
           "savings_options": [
@@ -2300,16 +1966,14 @@
         },
         {
           "name": "Dashlane",
-          "aliases": [
-            "DASHLANE"
-          ],
+          "aliases": ["DASHLANE"],
           "typical_price": 5.99,
           "tier": "Premium",
           "savings_options": [
             {
               "method": "Pay annually",
               "new_price": 4.99,
-              "savings_monthly": 1,
+              "savings_monthly": 1.00,
               "savings_annual": 12,
               "effort": "easy",
               "link": "https://www.dashlane.com/pricing",
@@ -2325,1408 +1989,6 @@
               "link": "https://bitwarden.com/",
               "affiliate": false,
               "instructions": "Bitwarden free plan covers basic password management"
-            }
-          ]
-        },
-        {
-          "name": "Adobe Acrobat Pro",
-          "aliases": [
-            "ADOBE ACROBAT",
-            "ACROBAT PRO",
-            "ADOBE PDF"
-          ],
-          "typical_price": 19.99,
-          "tier": "Pro",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 14.99,
-              "savings_monthly": 5,
-              "savings_annual": 60,
-              "effort": "easy",
-              "link": "https://www.adobe.com/acrobat/pricing.html",
-              "affiliate": false,
-              "instructions": "Annual plan is \u00079.88/year (~\u0004.99/mo) vs 9.99/mo"
-            },
-            {
-              "method": "Use free alternatives",
-              "new_price": 0,
-              "savings_monthly": 19.99,
-              "savings_annual": 240,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "PDFtk, Sejda, or browser-based PDF tools for most tasks"
-            },
-            {
-              "method": "One-time purchase alternative",
-              "new_price": 0,
-              "savings_monthly": 19.99,
-              "savings_annual": 240,
-              "effort": "medium",
-              "link": "https://www.foxit.com/",
-              "affiliate": false,
-              "instructions": "Foxit PDF Editor has one-time purchase (~( once vs Adobes ongoing subscription)"
-            }
-          ]
-        },
-        {
-          "name": "Evernote Premium",
-          "aliases": [
-            "EVERNOTE",
-            "EVERNOTE PREMIUM"
-          ],
-          "typical_price": 10.83,
-          "tier": "Personal",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 8.33,
-              "savings_monthly": 2.5,
-              "savings_annual": 30,
-              "effort": "easy",
-              "link": "https://evernote.com/upgrade",
-              "affiliate": false,
-              "instructions": "Annual plan is 9.99/year (~.33/mo) vs \u0000.83/mo"
-            },
-            {
-              "method": "Switch to Notion",
-              "new_price": 0,
-              "savings_monthly": 10.83,
-              "savings_annual": 130,
-              "effort": "medium",
-              "link": "https://www.notion.so/",
-              "affiliate": false,
-              "instructions": "Notion is free for individuals with similar note-taking features"
-            },
-            {
-              "method": "Use Apple Notes",
-              "new_price": 0,
-              "savings_monthly": 10.83,
-              "savings_annual": 130,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Apple Notes is free and surprisingly powerful for iOS/Mac users"
-            }
-          ]
-        },
-        {
-          "name": "Todoist Premium",
-          "aliases": [
-            "TODOIST",
-            "TODOIST PREMIUM"
-          ],
-          "typical_price": 4,
-          "tier": "Pro",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 3,
-              "savings_monthly": 1,
-              "savings_annual": 12,
-              "effort": "easy",
-              "link": "https://todoist.com/pricing",
-              "affiliate": false,
-              "instructions": "Annual plan is \u0006/year (~/mo) vs /mo"
-            },
-            {
-              "method": "Use free tier",
-              "new_price": 0,
-              "savings_monthly": 4,
-              "savings_annual": 48,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Free tier supports 5 active projects and basic features"
-            }
-          ]
-        }
-      ]
-    },
-    "ai_tools": {
-      "label": "AI Tools & Services",
-      "icon": "🤖",
-      "items": [
-        {
-          "name": "ChatGPT Plus",
-          "aliases": [
-            "CHATGPT",
-            "OPENAI",
-            "CHAT GPT"
-          ],
-          "typical_price": 20,
-          "tier": "Plus",
-          "savings_options": [
-            {
-              "method": "Annual subscription",
-              "new_price": 16.67,
-              "savings_monthly": 3.33,
-              "savings_annual": 40,
-              "effort": "easy",
-              "link": "https://chat.openai.com/",
-              "affiliate": false,
-              "instructions": "Pay annually ($200/year) instead of monthly for discount"
-            },
-            {
-              "method": "Free tier for basic use",
-              "new_price": 0,
-              "savings_monthly": 20,
-              "savings_annual": 240,
-              "effort": "easy",
-              "link": "https://chat.openai.com/",
-              "affiliate": false,
-              "instructions": "Use the free version (GPT-4o-mini) if you don't need GPT-4 or high usage limits"
-            },
-            {
-              "method": "Use Microsoft Copilot (includes GPT-4)",
-              "new_price": 0,
-              "savings_monthly": 20,
-              "savings_annual": 240,
-              "effort": "medium",
-              "link": "https://copilot.microsoft.com/",
-              "affiliate": false,
-              "instructions": "Microsoft Copilot includes GPT-4 for free with some limitations"
-            }
-          ]
-        },
-        {
-          "name": "Claude Pro",
-          "aliases": [
-            "CLAUDE",
-            "ANTHROPIC",
-            "CLAUDE AI"
-          ],
-          "typical_price": 20,
-          "tier": "Pro",
-          "savings_options": [
-            {
-              "method": "Use free tier strategically",
-              "new_price": 0,
-              "savings_monthly": 20,
-              "savings_annual": 240,
-              "effort": "easy",
-              "link": "https://claude.ai/",
-              "affiliate": false,
-              "instructions": "Free tier includes Opus 4 with rate limits. Use for lighter workloads."
-            },
-            {
-              "method": "API usage billing",
-              "new_price": 5,
-              "savings_monthly": 15,
-              "savings_annual": 180,
-              "effort": "medium",
-              "link": "https://console.anthropic.com/",
-              "affiliate": false,
-              "instructions": "If you're technical, use API pay-as-you-go. Often cheaper than subscription for moderate usage."
-            }
-          ]
-        },
-        {
-          "name": "Midjourney",
-          "aliases": [
-            "MIDJOURNEY",
-            "MJ"
-          ],
-          "typical_price": 30,
-          "tier": "Standard",
-          "savings_options": [
-            {
-              "method": "Annual plan discount",
-              "new_price": 24,
-              "savings_monthly": 6,
-              "savings_annual": 72,
-              "effort": "easy",
-              "link": "https://www.midjourney.com/",
-              "affiliate": false,
-              "instructions": "Annual subscription saves 20%"
-            },
-            {
-              "method": "Basic plan for casual use",
-              "new_price": 10,
-              "savings_monthly": 20,
-              "savings_annual": 240,
-              "effort": "easy",
-              "link": "https://www.midjourney.com/",
-              "affiliate": false,
-              "instructions": "Basic tier is $10/mo if you generate <200 images/month"
-            }
-          ]
-        },
-        {
-          "name": "GitHub Copilot",
-          "aliases": [
-            "COPILOT",
-            "GITHUB COPILOT",
-            "GH COPILOT"
-          ],
-          "typical_price": 10,
-          "tier": "Individual",
-          "savings_options": [
-            {
-              "method": "Use Cursor instead",
-              "new_price": 0,
-              "savings_monthly": 10,
-              "savings_annual": 120,
-              "effort": "medium",
-              "link": "https://cursor.sh/",
-              "affiliate": false,
-              "instructions": "Cursor has a generous free tier with Claude integration"
-            },
-            {
-              "method": "Free for students/educators",
-              "new_price": 0,
-              "savings_monthly": 10,
-              "savings_annual": 120,
-              "effort": "easy",
-              "link": "https://education.github.com/",
-              "affiliate": false,
-              "instructions": "Verify student/educator status for free Copilot"
-            }
-          ]
-        },
-        {
-          "name": "Grammarly Premium",
-          "aliases": [
-            "GRAMMARLY",
-            "GRAMMARLY PREMIUM"
-          ],
-          "typical_price": 12,
-          "tier": "Premium",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 10,
-              "savings_monthly": 2,
-              "savings_annual": 24,
-              "effort": "easy",
-              "link": "https://www.grammarly.com/",
-              "affiliate": true,
-              "affiliate_id": "TBD",
-              "instructions": "Annual billing is $120/year (~$10/mo) vs $12/mo"
-            },
-            {
-              "method": "Use free version",
-              "new_price": 0,
-              "savings_monthly": 12,
-              "savings_annual": 144,
-              "effort": "easy",
-              "link": "https://www.grammarly.com/",
-              "affiliate": false,
-              "instructions": "Free version covers basic grammar and spelling for most needs"
-            },
-            {
-              "method": "Use built-in AI tools",
-              "new_price": 0,
-              "savings_monthly": 12,
-              "savings_annual": 144,
-              "effort": "medium",
-              "link": null,
-              "affiliate": false,
-              "instructions": "ChatGPT, Claude, or Google Docs AI can check grammar for free"
-            }
-          ]
-        }
-      ]
-    },
-    "cloud_storage": {
-      "label": "Cloud Storage",
-      "icon": "☁️",
-      "items": [
-        {
-          "name": "Dropbox Plus",
-          "aliases": [
-            "DROPBOX",
-            "DROPBOX PLUS"
-          ],
-          "typical_price": 11.99,
-          "tier": "2TB",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 9.99,
-              "savings_monthly": 2,
-              "savings_annual": 24,
-              "effort": "easy",
-              "link": "https://www.dropbox.com/plans",
-              "affiliate": true,
-              "affiliate_id": "TBD",
-              "instructions": "Annual plan is \u00019.88/year (~.99/mo) vs \u0001.99/mo"
-            },
-            {
-              "method": "Switch to Google One",
-              "new_price": 9.99,
-              "savings_monthly": 2,
-              "savings_annual": 24,
-              "effort": "medium",
-              "link": "https://one.google.com/",
-              "affiliate": false,
-              "instructions": "Google One 2TB is .99/mo with better Google integration"
-            },
-            {
-              "method": "Downgrade to Basic (2GB free)",
-              "new_price": 0,
-              "savings_monthly": 11.99,
-              "savings_annual": 144,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "If you use <2GB, downgrade to free Basic plan"
-            }
-          ]
-        },
-        {
-          "name": "Google One",
-          "aliases": [
-            "GOOGLE ONE",
-            "GOOGLE STORAGE",
-            "GOOGLE DRIVE"
-          ],
-          "typical_price": 9.99,
-          "tier": "2TB",
-          "savings_options": [
-            {
-              "method": "Downgrade to 100GB",
-              "new_price": 1.99,
-              "savings_monthly": 8,
-              "savings_annual": 96,
-              "effort": "easy",
-              "link": "https://one.google.com/",
-              "affiliate": false,
-              "instructions": "If you use <100GB, downgrade to .99/mo plan"
-            },
-            {
-              "method": "Family plan split",
-              "new_price": 3.33,
-              "savings_monthly": 6.66,
-              "savings_annual": 80,
-              "effort": "medium",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Family plan (9.99 for 2TB) can be split among 5 people"
-            },
-            {
-              "method": "Use free tier",
-              "new_price": 0,
-              "savings_monthly": 9.99,
-              "savings_annual": 120,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "15GB free with Gmail. Clean up old emails and files to stay under."
-            }
-          ]
-        },
-        {
-          "name": "iCloud+",
-          "aliases": [
-            "ICLOUD",
-            "ICLOUD+",
-            "APPLE ICLOUD"
-          ],
-          "typical_price": 9.99,
-          "tier": "2TB",
-          "savings_options": [
-            {
-              "method": "Downgrade to 200GB",
-              "new_price": 2.99,
-              "savings_monthly": 7,
-              "savings_annual": 84,
-              "effort": "easy",
-              "link": "https://www.apple.com/icloud/",
-              "affiliate": false,
-              "instructions": "Most people use <200GB. Downgrade in Settings > iCloud > Manage Storage"
-            },
-            {
-              "method": "Apple One bundle",
-              "new_price": 6.5,
-              "savings_monthly": 3.49,
-              "savings_annual": 42,
-              "effort": "medium",
-              "link": "https://www.apple.com/apple-one/",
-              "affiliate": false,
-              "instructions": "Apple One Individual (9.95) includes 50GB + Music + TV+ + Arcade"
-            },
-            {
-              "method": "Use 5GB free tier",
-              "new_price": 0,
-              "savings_monthly": 9.99,
-              "savings_annual": 120,
-              "effort": "medium",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Optimize iPhone Storage and delete old backups to stay under 5GB"
-            }
-          ]
-        },
-        {
-          "name": "OneDrive",
-          "aliases": [
-            "ONEDRIVE",
-            "ONE DRIVE",
-            "MICROSOFT ONEDRIVE"
-          ],
-          "typical_price": 6.99,
-          "tier": "1TB (standalone)",
-          "savings_options": [
-            {
-              "method": "Get with Microsoft 365",
-              "new_price": 4.17,
-              "savings_monthly": 2.82,
-              "savings_annual": 34,
-              "effort": "easy",
-              "link": "https://www.microsoft.com/en-us/microsoft-365",
-              "affiliate": false,
-              "instructions": "Microsoft 365 Personal (9.99/yr) includes 1TB OneDrive + Office apps"
-            },
-            {
-              "method": "Family plan split",
-              "new_price": 1.67,
-              "savings_monthly": 5.32,
-              "savings_annual": 64,
-              "effort": "medium",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Microsoft 365 Family (9.99/yr) = 6TB total, split among 6 people"
-            }
-          ]
-        }
-      ]
-    },
-    "food_delivery": {
-      "label": "Food Delivery",
-      "icon": "🍔",
-      "items": [
-        {
-          "name": "DoorDash DashPass",
-          "aliases": [
-            "DOORDASH",
-            "DASHPASS",
-            "DOOR DASH"
-          ],
-          "typical_price": 9.99,
-          "tier": "DashPass",
-          "savings_options": [
-            {
-              "method": "Cancel and order less",
-              "new_price": 0,
-              "savings_monthly": 9.99,
-              "savings_annual": 120,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Average user saves more by just accepting delivery fees on occasional orders than paying monthly"
-            },
-            {
-              "method": "Get free with Chase Sapphire Reserve",
-              "new_price": 0,
-              "savings_monthly": 9.99,
-              "savings_annual": 120,
-              "effort": "medium",
-              "link": "https://www.chase.com/personal/credit-cards/sapphire/reserve",
-              "affiliate": true,
-              "affiliate_id": "TBD",
-              "instructions": "Chase Sapphire Reserve includes complimentary DashPass"
-            },
-            {
-              "method": "Annual plan",
-              "new_price": 8.25,
-              "savings_monthly": 1.74,
-              "savings_annual": 21,
-              "effort": "easy",
-              "link": "https://www.doordash.com/dashpass",
-              "affiliate": false,
-              "instructions": "Annual membership is 9/year (~.25/mo) vs .99/mo"
-            }
-          ]
-        },
-        {
-          "name": "Uber One",
-          "aliases": [
-            "UBER ONE",
-            "UBER EATS"
-          ],
-          "typical_price": 9.99,
-          "tier": "Uber One",
-          "savings_options": [
-            {
-              "method": "Cancel subscription",
-              "new_price": 0,
-              "savings_monthly": 9.99,
-              "savings_annual": 120,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Most users save by paying per-order fees rather than subscription"
-            },
-            {
-              "method": "Get free with Amex Platinum",
-              "new_price": 0,
-              "savings_monthly": 9.99,
-              "savings_annual": 120,
-              "effort": "medium",
-              "link": "https://www.americanexpress.com/us/credit-cards/card/platinum/",
-              "affiliate": true,
-              "affiliate_id": "TBD",
-              "instructions": "Amex Platinum includes complimentary Uber One ($15 monthly credit too)"
-            },
-            {
-              "method": "Student plan",
-              "new_price": 4.99,
-              "savings_monthly": 5,
-              "savings_annual": 60,
-              "effort": "easy",
-              "link": "https://www.uber.com/us/en/u/uber-one/",
-              "affiliate": false,
-              "instructions": "Verify student status for 50% off"
-            }
-          ]
-        },
-        {
-          "name": "Instacart+",
-          "aliases": [
-            "INSTACART",
-            "INSTACART+",
-            "INSTACART PLUS"
-          ],
-          "typical_price": 9.99,
-          "tier": "Instacart+",
-          "savings_options": [
-            {
-              "method": "Cancel and absorb delivery fees",
-              "new_price": 0,
-              "savings_monthly": 9.99,
-              "savings_annual": 120,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Unless ordering 2+ times/week, delivery fees < subscription cost"
-            },
-            {
-              "method": "Chase Freedom Unlimited perk",
-              "new_price": 0,
-              "savings_monthly": 9.99,
-              "savings_annual": 120,
-              "effort": "medium",
-              "link": "https://www.chase.com/",
-              "affiliate": false,
-              "instructions": "Some Chase cards include complimentary Instacart+"
-            }
-          ]
-        }
-      ]
-    },
-    "vpn_security": {
-      "label": "VPN & Security",
-      "icon": "🔒",
-      "items": [
-        {
-          "name": "ExpressVPN",
-          "aliases": [
-            "EXPRESSVPN",
-            "EXPRESS VPN"
-          ],
-          "typical_price": 12.95,
-          "tier": "Monthly",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 8.32,
-              "savings_monthly": 4.63,
-              "savings_annual": 56,
-              "effort": "easy",
-              "link": "https://www.expressvpn.com/",
-              "affiliate": true,
-              "affiliate_id": "TBD",
-              "instructions": "Annual plan is 9.95/year (~.32/mo) vs \u0002.95/mo"
-            },
-            {
-              "method": "Switch to NordVPN",
-              "new_price": 4.92,
-              "savings_monthly": 8.03,
-              "savings_annual": 96,
-              "effort": "medium",
-              "link": "https://nordvpn.com/",
-              "affiliate": true,
-              "affiliate_id": "TBD",
-              "instructions": "NordVPN 2-year plan is ~.92/mo with similar features"
-            },
-            {
-              "method": "Switch to Mullvad",
-              "new_price": 5,
-              "savings_monthly": 7.95,
-              "savings_annual": 95,
-              "effort": "medium",
-              "link": "https://mullvad.net/",
-              "affiliate": false,
-              "instructions": "Mullvad is €5/mo flat rate, privacy-focused, no marketing BS"
-            }
-          ]
-        },
-        {
-          "name": "NordVPN",
-          "aliases": [
-            "NORDVPN",
-            "NORD VPN"
-          ],
-          "typical_price": 12.99,
-          "tier": "Monthly",
-          "savings_options": [
-            {
-              "method": "2-year plan",
-              "new_price": 4.92,
-              "savings_monthly": 8.07,
-              "savings_annual": 97,
-              "effort": "easy",
-              "link": "https://nordvpn.com/",
-              "affiliate": true,
-              "affiliate_id": "TBD",
-              "instructions": "2-year plan drops to ~.92/mo"
-            },
-            {
-              "method": "Downgrade to basic VPN",
-              "new_price": 3.71,
-              "savings_monthly": 9.28,
-              "savings_annual": 111,
-              "effort": "medium",
-              "link": "https://www.privateinternetaccess.com/",
-              "affiliate": false,
-              "instructions": "Private Internet Access is .19/mo on 3-year plan"
-            }
-          ]
-        },
-        {
-          "name": "1Password",
-          "aliases": [
-            "1PASSWORD",
-            "ONE PASSWORD"
-          ],
-          "typical_price": 4.99,
-          "tier": "Individual",
-          "savings_options": [
-            {
-              "method": "Family plan split",
-              "new_price": 1.67,
-              "savings_monthly": 3.32,
-              "savings_annual": 40,
-              "effort": "medium",
-              "link": "https://1password.com/",
-              "affiliate": true,
-              "affiliate_id": "TBD",
-              "instructions": "Family plan is .99/mo for 5 people = /person"
-            },
-            {
-              "method": "Switch to Bitwarden Premium",
-              "new_price": 0.83,
-              "savings_monthly": 4.16,
-              "savings_annual": 50,
-              "effort": "medium",
-              "link": "https://bitwarden.com/",
-              "affiliate": false,
-              "instructions": "Bitwarden Premium is \u0000/year (~/bin/bash.83/mo)"
-            },
-            {
-              "method": "Use free password manager",
-              "new_price": 0,
-              "savings_monthly": 4.99,
-              "savings_annual": 60,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Apple iCloud Keychain or Google Password Manager are free"
-            }
-          ]
-        },
-        {
-          "name": "LastPass Premium",
-          "aliases": [
-            "LASTPASS",
-            "LAST PASS"
-          ],
-          "typical_price": 3,
-          "tier": "Premium",
-          "savings_options": [
-            {
-              "method": "Switch to Bitwarden",
-              "new_price": 0.83,
-              "savings_monthly": 2.17,
-              "savings_annual": 26,
-              "effort": "medium",
-              "link": "https://bitwarden.com/",
-              "affiliate": false,
-              "instructions": "Bitwarden Premium is \u0000/year (~/bin/bash.83/mo) with similar features"
-            },
-            {
-              "method": "Use free tier",
-              "new_price": 0,
-              "savings_monthly": 3,
-              "savings_annual": 36,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "LastPass Free works on unlimited devices (changed in 2021)"
-            }
-          ]
-        }
-      ]
-    },
-    "entertainment": {
-      "label": "Entertainment & Reading",
-      "icon": "📚",
-      "items": [
-        {
-          "name": "Audible",
-          "aliases": [
-            "AUDIBLE",
-            "AUDIBLE.COM"
-          ],
-          "typical_price": 14.95,
-          "tier": "Premium Plus",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 12.46,
-              "savings_monthly": 2.49,
-              "savings_annual": 30,
-              "effort": "easy",
-              "link": "https://www.audible.com/",
-              "affiliate": true,
-              "affiliate_id": "TBD",
-              "instructions": "Annual membership is \u00049.50/year (~\u0002.46/mo)"
-            },
-            {
-              "method": "Switch to Libby (library app)",
-              "new_price": 0,
-              "savings_monthly": 14.95,
-              "savings_annual": 179,
-              "effort": "easy",
-              "link": "https://libbyapp.com/",
-              "affiliate": false,
-              "instructions": "Libby gives free audiobooks with just a library card"
-            },
-            {
-              "method": "Pause membership",
-              "new_price": 0,
-              "savings_monthly": 14.95,
-              "savings_annual": 179,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Pause for up to 3 months while keeping your library and credits"
-            }
-          ]
-        },
-        {
-          "name": "Kindle Unlimited",
-          "aliases": [
-            "KINDLE UNLIMITED",
-            "KINDLE",
-            "KU"
-          ],
-          "typical_price": 11.99,
-          "tier": "Monthly",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 9.99,
-              "savings_monthly": 2,
-              "savings_annual": 24,
-              "effort": "easy",
-              "link": "https://www.amazon.com/kindle-unlimited",
-              "affiliate": true,
-              "affiliate_id": "TBD",
-              "instructions": "Annual plan is often \u00019.88/year (~.99/mo)"
-            },
-            {
-              "method": "Use Prime Reading",
-              "new_price": 0,
-              "savings_monthly": 11.99,
-              "savings_annual": 144,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "If you have Prime, Prime Reading includes 1000+ free books"
-            },
-            {
-              "method": "Use Libby",
-              "new_price": 0,
-              "savings_monthly": 11.99,
-              "savings_annual": 144,
-              "effort": "easy",
-              "link": "https://libbyapp.com/",
-              "affiliate": false,
-              "instructions": "Libby app gives free ebooks with a library card"
-            }
-          ]
-        },
-        {
-          "name": "The New York Times",
-          "aliases": [
-            "NYT",
-            "NEW YORK TIMES",
-            "NY TIMES"
-          ],
-          "typical_price": 25,
-          "tier": "All Access",
-          "savings_options": [
-            {
-              "method": "Intro rate",
-              "new_price": 4,
-              "savings_monthly": 21,
-              "savings_annual": 252,
-              "effort": "easy",
-              "link": "https://www.nytimes.com/subscription",
-              "affiliate": true,
-              "affiliate_id": "TBD",
-              "instructions": "New subscribers often get /mo for first year"
-            },
-            {
-              "method": "Digital-only plan",
-              "new_price": 17,
-              "savings_monthly": 8,
-              "savings_annual": 96,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Digital-only is \u0007/mo vs \u0005/mo All Access"
-            },
-            {
-              "method": "Threaten to cancel",
-              "new_price": 10,
-              "savings_monthly": 15,
-              "savings_annual": 180,
-              "effort": "medium",
-              "link": null,
-              "affiliate": false,
-              "negotiation_script": "Call to cancel. Wait for retention offer. Often get 50% off for 1 year."
-            }
-          ]
-        },
-        {
-          "name": "The Athletic",
-          "aliases": [
-            "ATHLETIC",
-            "THE ATHLETIC"
-          ],
-          "typical_price": 9.99,
-          "tier": "Monthly",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 6.66,
-              "savings_monthly": 3.33,
-              "savings_annual": 40,
-              "effort": "easy",
-              "link": "https://theathletic.com/",
-              "affiliate": false,
-              "instructions": "Annual plan is 9.99/year (~.66/mo)"
-            },
-            {
-              "method": "Included with NYT All Access",
-              "new_price": 0,
-              "savings_monthly": 9.99,
-              "savings_annual": 120,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "The Athletic is now included with NYT All Access subscription"
-            }
-          ]
-        },
-        {
-          "name": "Medium Membership",
-          "aliases": [
-            "MEDIUM",
-            "MEDIUM.COM"
-          ],
-          "typical_price": 5,
-          "tier": "Member",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 4.17,
-              "savings_monthly": 0.83,
-              "savings_annual": 10,
-              "effort": "easy",
-              "link": "https://medium.com/membership",
-              "affiliate": false,
-              "instructions": "Annual membership is \u0000/year (~.17/mo)"
-            },
-            {
-              "method": "Read for free",
-              "new_price": 0,
-              "savings_monthly": 5,
-              "savings_annual": 60,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Open articles in incognito/private browsing to bypass paywall (3 free/month otherwise)"
-            }
-          ]
-        }
-      ]
-    },
-    "communication": {
-      "label": "Communication & Productivity",
-      "icon": "💬",
-      "items": [
-        {
-          "name": "Zoom Pro",
-          "aliases": [
-            "ZOOM",
-            "ZOOM.US",
-            "ZOOM MEETINGS"
-          ],
-          "typical_price": 14.99,
-          "tier": "Pro",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 12.49,
-              "savings_monthly": 2.5,
-              "savings_annual": 30,
-              "effort": "easy",
-              "link": "https://zoom.us/pricing",
-              "affiliate": false,
-              "instructions": "Annual billing saves 16% (~\u0002.49/mo vs \u0004.99/mo)"
-            },
-            {
-              "method": "Use free tier",
-              "new_price": 0,
-              "savings_monthly": 14.99,
-              "savings_annual": 180,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Free tier allows unlimited 1-on-1 meetings and 40-min group calls"
-            },
-            {
-              "method": "Switch to Google Meet",
-              "new_price": 0,
-              "savings_monthly": 14.99,
-              "savings_annual": 180,
-              "effort": "medium",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Google Meet is free with no time limits for Google Workspace users"
-            }
-          ]
-        },
-        {
-          "name": "Slack Pro",
-          "aliases": [
-            "SLACK",
-            "SLACK.COM"
-          ],
-          "typical_price": 8.75,
-          "tier": "Pro",
-          "savings_options": [
-            {
-              "method": "Annual billing",
-              "new_price": 7.25,
-              "savings_monthly": 1.5,
-              "savings_annual": 18,
-              "effort": "easy",
-              "link": "https://slack.com/pricing",
-              "affiliate": false,
-              "instructions": "Annual billing is \u0007/year per user (~.25/mo) vs .75/mo"
-            },
-            {
-              "method": "Use free tier",
-              "new_price": 0,
-              "savings_monthly": 8.75,
-              "savings_annual": 105,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Free tier works for small teams (10k message history limit)"
-            },
-            {
-              "method": "Switch to Discord",
-              "new_price": 0,
-              "savings_monthly": 8.75,
-              "savings_annual": 105,
-              "effort": "hard",
-              "link": "https://discord.com/",
-              "affiliate": false,
-              "instructions": "Discord is free and works well for smaller communities/teams"
-            }
-          ]
-        },
-        {
-          "name": "Discord Nitro",
-          "aliases": [
-            "DISCORD",
-            "DISCORD NITRO"
-          ],
-          "typical_price": 9.99,
-          "tier": "Nitro",
-          "savings_options": [
-            {
-              "method": "Downgrade to Nitro Basic",
-              "new_price": 2.99,
-              "savings_monthly": 7,
-              "savings_annual": 84,
-              "effort": "easy",
-              "link": "https://discord.com/nitro",
-              "affiliate": false,
-              "instructions": "Nitro Basic is .99/mo with custom emoji and file uploads"
-            },
-            {
-              "method": "Annual plan",
-              "new_price": 8.33,
-              "savings_monthly": 1.66,
-              "savings_annual": 20,
-              "effort": "easy",
-              "link": "https://discord.com/nitro",
-              "affiliate": false,
-              "instructions": "Annual Nitro is 9.99/year (~.33/mo) vs .99/mo"
-            },
-            {
-              "method": "Use free Discord",
-              "new_price": 0,
-              "savings_monthly": 9.99,
-              "savings_annual": 120,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Free Discord has all core features for most users"
-            }
-          ]
-        },
-        {
-          "name": "Calendly",
-          "aliases": [
-            "CALENDLY",
-            "CALENDLY.COM"
-          ],
-          "typical_price": 10,
-          "tier": "Professional",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 8,
-              "savings_monthly": 2,
-              "savings_annual": 24,
-              "effort": "easy",
-              "link": "https://calendly.com/pricing",
-              "affiliate": false,
-              "instructions": "Annual plan is \u0006/year (~/mo) vs \u0000/mo"
-            },
-            {
-              "method": "Use free tier",
-              "new_price": 0,
-              "savings_monthly": 10,
-              "savings_annual": 120,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Free tier supports 1 event type and unlimited bookings"
-            },
-            {
-              "method": "Google Calendar Appointment Slots",
-              "new_price": 0,
-              "savings_monthly": 10,
-              "savings_annual": 120,
-              "effort": "medium",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Google Calendar has free appointment scheduling built-in"
-            }
-          ]
-        },
-        {
-          "name": "Canva Pro",
-          "aliases": [
-            "CANVA",
-            "CANVA PRO"
-          ],
-          "typical_price": 12.99,
-          "tier": "Pro",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 10,
-              "savings_monthly": 2.99,
-              "savings_annual": 36,
-              "effort": "easy",
-              "link": "https://www.canva.com/pricing/",
-              "affiliate": true,
-              "affiliate_id": "TBD",
-              "instructions": "Annual plan is \u00019.99/year (~\u0000/mo) vs \u0002.99/mo"
-            },
-            {
-              "method": "Use free tier",
-              "new_price": 0,
-              "savings_monthly": 12.99,
-              "savings_annual": 156,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Free tier has 250k+ templates and is enough for most users"
-            },
-            {
-              "method": "Team plan split",
-              "new_price": 2.5,
-              "savings_monthly": 10.49,
-              "savings_annual": 126,
-              "effort": "medium",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Team plan (\u0004.99/mo for 5 people) = /person"
-            }
-          ]
-        },
-        {
-          "name": "Notion",
-          "aliases": [
-            "NOTION",
-            "NOTION.SO"
-          ],
-          "typical_price": 10,
-          "tier": "Plus",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 8,
-              "savings_monthly": 2,
-              "savings_annual": 24,
-              "effort": "easy",
-              "link": "https://www.notion.so/pricing",
-              "affiliate": false,
-              "instructions": "Annual plan is \u0006/year (~/mo) vs \u0000/mo"
-            },
-            {
-              "method": "Use free tier",
-              "new_price": 0,
-              "savings_monthly": 10,
-              "savings_annual": 120,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Free tier works for individuals and small teams"
-            }
-          ]
-        }
-      ]
-    },
-    "learning": {
-      "label": "Learning & Development",
-      "icon": "🎓",
-      "items": [
-        {
-          "name": "LinkedIn Premium",
-          "aliases": [
-            "LINKEDIN",
-            "LINKEDIN PREMIUM"
-          ],
-          "typical_price": 29.99,
-          "tier": "Career",
-          "savings_options": [
-            {
-              "method": "Free trial then cancel",
-              "new_price": 0,
-              "savings_monthly": 29.99,
-              "savings_annual": 360,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Use the 30-day free trial for job search, then cancel"
-            },
-            {
-              "method": "Annual plan",
-              "new_price": 19.99,
-              "savings_monthly": 10,
-              "savings_annual": 120,
-              "effort": "easy",
-              "link": "https://www.linkedin.com/premium",
-              "affiliate": false,
-              "instructions": "Annual plan is often \u00039.88/year (~9.99/mo)"
-            },
-            {
-              "method": "Only subscribe when job searching",
-              "new_price": 0,
-              "savings_monthly": 29.99,
-              "savings_annual": 360,
-              "effort": "medium",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Activate only for 1-2 months during active job search"
-            }
-          ]
-        },
-        {
-          "name": "Coursera Plus",
-          "aliases": [
-            "COURSERA",
-            "COURSERA PLUS"
-          ],
-          "typical_price": 59,
-          "tier": "Plus",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 33.25,
-              "savings_monthly": 25.75,
-              "savings_annual": 309,
-              "effort": "easy",
-              "link": "https://www.coursera.org/courseraplus",
-              "affiliate": true,
-              "affiliate_id": "TBD",
-              "instructions": "Annual plan is 99/year (~\u0003.25/mo) vs 9/mo"
-            },
-            {
-              "method": "Take individual courses",
-              "new_price": 0,
-              "savings_monthly": 59,
-              "savings_annual": 708,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Many courses are free to audit (no certificate)"
-            }
-          ]
-        },
-        {
-          "name": "MasterClass",
-          "aliases": [
-            "MASTERCLASS",
-            "MASTER CLASS"
-          ],
-          "typical_price": 15,
-          "tier": "Monthly",
-          "savings_options": [
-            {
-              "method": "Annual plan",
-              "new_price": 10,
-              "savings_monthly": 5,
-              "savings_annual": 60,
-              "effort": "easy",
-              "link": "https://www.masterclass.com/",
-              "affiliate": true,
-              "affiliate_id": "TBD",
-              "instructions": "Annual plan is \u0010/year (~\u0000/mo) vs \u0005/mo"
-            },
-            {
-              "method": "Duo plan split",
-              "new_price": 7.5,
-              "savings_monthly": 7.5,
-              "savings_annual": 90,
-              "effort": "medium",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Duo plan (80/year) can be split between 2 people"
-            }
-          ]
-        }
-      ]
-    },
-    "travel": {
-      "label": "Travel & Lifestyle",
-      "icon": "✈️",
-      "items": [
-        {
-          "name": "TSA PreCheck",
-          "aliases": [
-            "TSA PRECHECK",
-            "TSA PRE",
-            "PRECHECK"
-          ],
-          "typical_price": 8.5,
-          "tier": "5-year membership",
-          "savings_options": [
-            {
-              "method": "Get Global Entry instead",
-              "new_price": 8.33,
-              "savings_monthly": 0.17,
-              "savings_annual": 10,
-              "effort": "easy",
-              "link": "https://www.cbp.gov/travel/trusted-traveler-programs/global-entry",
-              "affiliate": false,
-              "instructions": "Global Entry (\u0000/5yr = .67/mo) includes TSA PreCheck + faster customs"
-            },
-            {
-              "method": "Credit card reimbursement",
-              "new_price": 0,
-              "savings_monthly": 1.46,
-              "savings_annual": 85,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Many travel cards (Chase Sapphire Reserve, Amex Platinum) reimburse TSA/Global Entry"
-            }
-          ]
-        },
-        {
-          "name": "AAA Roadside Assistance",
-          "aliases": [
-            "AAA",
-            "TRIPLE A",
-            "AAA MEMBERSHIP"
-          ],
-          "typical_price": 7,
-          "tier": "Classic",
-          "savings_options": [
-            {
-              "method": "Use credit card benefit",
-              "new_price": 0,
-              "savings_monthly": 7,
-              "savings_annual": 84,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Some cards (Amex, BofA) include free roadside assistance"
-            },
-            {
-              "method": "Use car insurance roadside",
-              "new_price": 0,
-              "savings_monthly": 7,
-              "savings_annual": 84,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Many auto insurance policies include roadside assistance for free or cheap add-on"
-            }
-          ]
-        },
-        {
-          "name": "Clear",
-          "aliases": [
-            "CLEAR",
-            "CLEAR PLUS"
-          ],
-          "typical_price": 15.41,
-          "tier": "Plus",
-          "savings_options": [
-            {
-              "method": "Credit card discount",
-              "new_price": 6.58,
-              "savings_monthly": 8.83,
-              "savings_annual": 106,
-              "effort": "easy",
-              "link": null,
-              "affiliate": false,
-              "instructions": "Amex Platinum members get Clear for 9/year instead of 89"
-            },
-            {
-              "method": "Switch to TSA PreCheck",
-              "new_price": 1.46,
-              "savings_monthly": 13.95,
-              "savings_annual": 167,
-              "effort": "medium",
-              "link": null,
-              "affiliate": false,
-              "instructions": "TSA PreCheck (\u0007.50/year) is cheaper and works at more airports"
-            },
-            {
-              "method": "Family plan",
-              "new_price": 4.58,
-              "savings_monthly": 10.83,
-              "savings_annual": 130,
-              "effort": "medium",
-              "link": "https://www.clearme.com/",
-              "affiliate": false,
-              "instructions": "Add family members for \u0000/year each (vs 89 individual)"
             }
           ]
         }
