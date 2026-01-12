@@ -1,0 +1,443 @@
+{
+  "meta": {
+    "lastUpdated": "2026-01-12",
+    "version": "1.0",
+    "totalServices": 20,
+    "categories": [
+      "streaming",
+      "software",
+      "fitness",
+      "utilities",
+      "insurance",
+      "telecom"
+    ]
+  },
+  "categories": {
+    "streaming": {
+      "label": "Streaming Services",
+      "icon": "📺",
+      "items": [
+        {
+          "name": "Netflix",
+          "aliases": ["NETFLIX.COM", "NETFLIX INC", "NETFLIX"],
+          "typical_price": 15.49,
+          "tier": "Standard",
+          "savings_options": [
+            {
+              "method": "Switch to ad-supported tier",
+              "new_price": 6.99,
+              "savings_monthly": 8.50,
+              "savings_annual": 102,
+              "effort": "easy",
+              "link": "https://www.netflix.com/changewplan",
+              "affiliate": false,
+              "instructions": "Log in → Account → Change Plan → Select Standard with Ads ($6.99/mo)"
+            },
+            {
+              "method": "Share Premium plan with family",
+              "new_price": 4.40,
+              "savings_monthly": 11.09,
+              "savings_annual": 133,
+              "effort": "medium",
+              "link": null,
+              "affiliate": false,
+              "instructions": "Upgrade to Premium ($22.99) and split with 4 other people = $4.60/person"
+            },
+            {
+              "method": "Use T-Mobile Tuesday perk",
+              "new_price": 0,
+              "savings_monthly": 15.49,
+              "savings_annual": 186,
+              "effort": "easy",
+              "link": "https://www.t-mobile.com/offers/netflix-on-us",
+              "affiliate": false,
+              "instructions": "If you have T-Mobile Magenta plan, activate free Netflix Standard"
+            }
+          ]
+        },
+        {
+          "name": "Spotify",
+          "aliases": ["SPOTIFY", "SPOTIFY USA", "SPOTIFY.COM"],
+          "typical_price": 10.99,
+          "tier": "Premium Individual",
+          "savings_options": [
+            {
+              "method": "Switch to Duo plan (share with 1 person)",
+              "new_price": 7.00,
+              "savings_monthly": 3.99,
+              "savings_annual": 48,
+              "effort": "easy",
+              "link": "https://www.spotify.com/us/duo/",
+              "affiliate": false,
+              "instructions": "Spotify Duo is $13.99 for 2 people = $7/person"
+            },
+            {
+              "method": "Use student discount",
+              "new_price": 5.99,
+              "savings_monthly": 5.00,
+              "savings_annual": 60,
+              "effort": "easy",
+              "link": "https://www.spotify.com/us/student/",
+              "affiliate": false,
+              "instructions": "If you're a student, verify with SheerID for 50% off"
+            },
+            {
+              "method": "Get free with Hulu bundle",
+              "new_price": 0,
+              "savings_monthly": 10.99,
+              "savings_annual": 132,
+              "effort": "medium",
+              "link": "https://www.spotify.com/us/hulu/",
+              "affiliate": false,
+              "instructions": "Spotify Premium students get Hulu included. Or get Hulu bundle that includes Spotify"
+            }
+          ]
+        },
+        {
+          "name": "Disney Plus",
+          "aliases": ["DISNEY+", "DISNEYPLUS", "DISNEY PLUS"],
+          "typical_price": 13.99,
+          "tier": "Premium",
+          "savings_options": [
+            {
+              "method": "Switch to ad-supported tier",
+              "new_price": 7.99,
+              "savings_monthly": 6.00,
+              "savings_annual": 72,
+              "effort": "easy",
+              "link": "https://www.disneyplus.com/",
+              "affiliate": false,
+              "instructions": "Downgrade to Basic (with ads) for $7.99/mo"
+            },
+            {
+              "method": "Bundle with Hulu",
+              "new_price": 9.99,
+              "savings_monthly": 4.00,
+              "savings_annual": 48,
+              "effort": "easy",
+              "link": "https://www.disneyplus.com/welcome/bundle",
+              "affiliate": false,
+              "instructions": "Get Disney+ and Hulu bundle for $9.99/mo (saves $4/mo if you have both)"
+            }
+          ]
+        }
+      ]
+    },
+    "telecom": {
+      "label": "Phone & Internet",
+      "icon": "📱",
+      "items": [
+        {
+          "name": "Verizon Wireless",
+          "aliases": ["VERIZON", "VERIZON WIRELESS", "VZW"],
+          "typical_price": 85,
+          "tier": "Unlimited",
+          "savings_options": [
+            {
+              "method": "Switch to Visible (Verizon network)",
+              "new_price": 25,
+              "savings_monthly": 60,
+              "savings_annual": 720,
+              "effort": "easy",
+              "link": "https://www.visible.com",
+              "affiliate": true,
+              "affiliate_id": "TBD",
+              "instructions": "Visible runs on Verizon's network. $25/mo unlimited, no contract. Keep your number."
+            },
+            {
+              "method": "Switch to Mint Mobile",
+              "new_price": 15,
+              "savings_monthly": 70,
+              "savings_annual": 840,
+              "effort": "medium",
+              "link": "https://www.mintmobile.com",
+              "affiliate": true,
+              "affiliate_id": "TBD",
+              "instructions": "Mint runs on T-Mobile. 10GB plan is $15/mo with annual prepay ($180/year upfront)"
+            },
+            {
+              "method": "Call for loyalty discount",
+              "new_price": 65,
+              "savings_monthly": 20,
+              "savings_annual": 240,
+              "effort": "easy",
+              "link": null,
+              "affiliate": false,
+              "negotiation_script": "Hi, I've been a customer for [X] years and I'm reviewing my bills. My current plan is $85/mo. I've seen competitors offering similar service for $50-60. Can you offer me a loyalty discount to keep my business?"
+            }
+          ]
+        },
+        {
+          "name": "Comcast Xfinity",
+          "aliases": ["COMCAST", "XFINITY", "COMCAST CABLE"],
+          "typical_price": 89,
+          "tier": "300 Mbps Internet",
+          "savings_options": [
+            {
+              "method": "Call for promotional rate",
+              "new_price": 50,
+              "savings_monthly": 39,
+              "savings_annual": 468,
+              "effort": "easy",
+              "link": null,
+              "affiliate": false,
+              "negotiation_script": "Hi, my promotional rate expired and my bill jumped to $89. I've been a customer for [X] years. Can you put me back on a promotional rate? I'm seeing AT&T and other competitors offer 300Mbps for $40-50."
+            },
+            {
+              "method": "Threaten to cancel (retention dept)",
+              "new_price": 45,
+              "savings_monthly": 44,
+              "savings_annual": 528,
+              "effort": "medium",
+              "link": null,
+              "affiliate": false,
+              "negotiation_script": "I need to cancel my service. [Wait to be transferred to retention department] I really like Xfinity but can't justify $89/mo. AT&T offered me $45 for similar speeds. Can you match that to keep me as a customer?"
+            }
+          ]
+        },
+        {
+          "name": "AT&T Wireless",
+          "aliases": ["ATT", "AT&T", "AT&T WIRELESS"],
+          "typical_price": 75,
+          "tier": "Unlimited",
+          "savings_options": [
+            {
+              "method": "Switch to Cricket (AT&T network)",
+              "new_price": 25,
+              "savings_monthly": 50,
+              "savings_annual": 600,
+              "effort": "easy",
+              "link": "https://www.cricketwireless.com",
+              "affiliate": true,
+              "affiliate_id": "TBD",
+              "instructions": "Cricket is AT&T-owned. Unlimited plan is $25/mo with AutoPay discount"
+            }
+          ]
+        }
+      ]
+    },
+    "utilities": {
+      "label": "Utilities",
+      "icon": "⚡",
+      "items": [
+        {
+          "name": "Electric Bill",
+          "aliases": ["ELECTRIC", "POWER", "ENERGY", "UTILITY"],
+          "typical_price": 150,
+          "tier": "Average household",
+          "savings_options": [
+            {
+              "method": "Compare providers (deregulated states)",
+              "new_price": 110,
+              "savings_monthly": 40,
+              "savings_annual": 480,
+              "effort": "medium",
+              "link": "https://www.energybot.com",
+              "affiliate": true,
+              "affiliate_id": "TBD",
+              "instructions": "If you're in TX, PA, OH, IL, NJ, MD, or other deregulated states, you can shop for cheaper electricity. EnergyBot compares rates in your area.",
+              "note": "Only works in deregulated states"
+            },
+            {
+              "method": "Negotiate with current provider",
+              "new_price": 135,
+              "savings_monthly": 15,
+              "savings_annual": 180,
+              "effort": "easy",
+              "link": null,
+              "affiliate": false,
+              "negotiation_script": "Hi, I'm reviewing my energy costs and noticed my rate is around [your rate]/kWh. I've been researching and see competitors offering lower rates. I've been a customer for [X] years. Can you offer me a better rate or any discount programs?"
+            },
+            {
+              "method": "Switch to time-of-use plan",
+              "new_price": 130,
+              "savings_monthly": 20,
+              "savings_annual": 240,
+              "effort": "easy",
+              "link": null,
+              "affiliate": false,
+              "instructions": "Ask your provider about time-of-use rates. Run dishwasher, laundry, and EV charging at night (off-peak hours) when rates are 50%+ cheaper."
+            }
+          ]
+        }
+      ]
+    },
+    "insurance": {
+      "label": "Insurance",
+      "icon": "🛡️",
+      "items": [
+        {
+          "name": "Car Insurance",
+          "aliases": ["AUTO INSURANCE", "CAR INSURANCE", "GEICO", "STATE FARM", "PROGRESSIVE", "ALLSTATE"],
+          "typical_price": 150,
+          "tier": "Full coverage",
+          "savings_options": [
+            {
+              "method": "Compare quotes online",
+              "new_price": 110,
+              "savings_monthly": 40,
+              "savings_annual": 480,
+              "effort": "medium",
+              "link": "https://www.policygenius.com/auto-insurance/",
+              "affiliate": true,
+              "affiliate_id": "TBD",
+              "instructions": "Get 5+ quotes in 10 minutes. People who switch save an average of $400/year. Compare Geico, Progressive, State Farm, etc."
+            },
+            {
+              "method": "Bundle with home/renters insurance",
+              "new_price": 120,
+              "savings_monthly": 30,
+              "savings_annual": 360,
+              "effort": "medium",
+              "link": null,
+              "affiliate": false,
+              "instructions": "Most insurers offer 15-25% discount when you bundle auto + home (or renters) insurance with the same company"
+            },
+            {
+              "method": "Raise deductible",
+              "new_price": 125,
+              "savings_monthly": 25,
+              "savings_annual": 300,
+              "effort": "easy",
+              "link": null,
+              "affiliate": false,
+              "instructions": "Call your insurer and raise your deductible from $500 to $1000. Instant 15-20% discount."
+            }
+          ]
+        }
+      ]
+    },
+    "fitness": {
+      "label": "Fitness & Wellness",
+      "icon": "💪",
+      "items": [
+        {
+          "name": "Planet Fitness",
+          "aliases": ["PLANET FITNESS", "PLANET FIT", "PF"],
+          "typical_price": 24.99,
+          "tier": "Black Card",
+          "savings_options": [
+            {
+              "method": "Downgrade to basic membership",
+              "new_price": 10,
+              "savings_monthly": 14.99,
+              "savings_annual": 180,
+              "effort": "easy",
+              "link": null,
+              "affiliate": false,
+              "instructions": "Visit your home club and ask to downgrade to the $10/mo basic membership. You lose guest privileges and access to other locations, but save $180/year."
+            }
+          ]
+        },
+        {
+          "name": "LA Fitness",
+          "aliases": ["LA FITNESS", "LA FIT"],
+          "typical_price": 49.99,
+          "tier": "Monthly",
+          "savings_options": [
+            {
+              "method": "Negotiate when threatening to cancel",
+              "new_price": 29.99,
+              "savings_monthly": 20,
+              "savings_annual": 240,
+              "effort": "easy",
+              "link": null,
+              "affiliate": false,
+              "negotiation_script": "Hi, I need to cancel my membership. [Wait for retention offer] I like the gym but I can't justify $50/mo anymore. Can you offer me a better rate to stay?"
+            },
+            {
+              "method": "Pay annually upfront",
+              "new_price": 33.25,
+              "savings_monthly": 16.74,
+              "savings_annual": 201,
+              "effort": "medium",
+              "link": null,
+              "affiliate": false,
+              "instructions": "Ask about annual membership. Usually $399-450 for 12 months = $33-37/mo vs $50/mo"
+            }
+          ]
+        }
+      ]
+    },
+    "software": {
+      "label": "Software & Tools",
+      "icon": "💻",
+      "items": [
+        {
+          "name": "Adobe Creative Cloud",
+          "aliases": ["ADOBE", "ADOBE CC", "ADOBE CREATIVE"],
+          "typical_price": 59.99,
+          "tier": "All Apps",
+          "savings_options": [
+            {
+              "method": "Switch to Photography plan",
+              "new_price": 9.99,
+              "savings_monthly": 50,
+              "savings_annual": 600,
+              "effort": "easy",
+              "link": "https://www.adobe.com/creativecloud/plans.html",
+              "affiliate": false,
+              "instructions": "If you only use Photoshop and Lightroom, downgrade to the Photography plan ($9.99/mo instead of $59.99)"
+            },
+            {
+              "method": "Pay annually for discount",
+              "new_price": 54.99,
+              "savings_monthly": 5,
+              "savings_annual": 60,
+              "effort": "easy",
+              "link": "https://www.adobe.com/creativecloud/plans.html",
+              "affiliate": false,
+              "instructions": "Pay annually (billed monthly) instead of month-to-month. $54.99/mo vs $59.99/mo"
+            }
+          ]
+        },
+        {
+          "name": "Microsoft 365",
+          "aliases": ["MICROSOFT", "OFFICE 365", "MS 365"],
+          "typical_price": 9.99,
+          "tier": "Personal",
+          "savings_options": [
+            {
+              "method": "Switch to Family plan and share",
+              "new_price": 3.33,
+              "savings_monthly": 6.66,
+              "savings_annual": 80,
+              "effort": "medium",
+              "link": "https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products",
+              "affiliate": false,
+              "instructions": "Microsoft 365 Family is $99.99/year for up to 6 people. Split with family = $16.66/person/year = $1.39/mo"
+            }
+          ]
+        },
+        {
+          "name": "Dropbox",
+          "aliases": ["DROPBOX"],
+          "typical_price": 11.99,
+          "tier": "Plus (2TB)",
+          "savings_options": [
+            {
+              "method": "Switch to Google One",
+              "new_price": 9.99,
+              "savings_monthly": 2,
+              "savings_annual": 24,
+              "effort": "medium",
+              "link": "https://one.google.com/",
+              "affiliate": false,
+              "instructions": "Google One offers 2TB for $9.99/mo (vs Dropbox $11.99). Bonus: Includes Google Photos, Drive, Gmail storage"
+            },
+            {
+              "method": "Pay annually for discount",
+              "new_price": 9.99,
+              "savings_monthly": 2,
+              "savings_annual": 24,
+              "effort": "easy",
+              "link": "https://www.dropbox.com/plans",
+              "affiliate": false,
+              "instructions": "Pay $119.88/year upfront = $9.99/mo vs $11.99/mo monthly"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
