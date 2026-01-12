@@ -35,7 +35,7 @@ export default function HomePage() {
                   <Button variant="secondary">Start free analysis</Button>
                 </Link>
                 <span className="text-sm text-slate">
-                  $7 one-time to unlock the full report
+                  $5 one-time to unlock the full report
                 </span>
               </div>
               <div className="flex flex-wrap gap-4 text-xs text-slate">
@@ -105,7 +105,7 @@ export default function HomePage() {
               <h2 className="font-heading text-3xl">See the savings before you pay.</h2>
               <p className="text-sm text-slate">
                 We show the top 3-5 opportunities for free. Unlock the full report
-                for $7 to see every matched bill, total savings, and scripts.
+                for $5 to see every matched bill, total savings, and scripts.
               </p>
               <Link href="/analyze">
                 <Button variant="primary">Try a free scan</Button>

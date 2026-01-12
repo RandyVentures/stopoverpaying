@@ -16,7 +16,7 @@ import { clearExpired, loadWithExpiry, saveWithExpiry } from "@/lib/storage";
 import type { MatchedService, SavingsReport } from "@/lib/types";
 import { formatCurrency } from "@/lib/utils";
 
-const STRIPE_PRICE = "$7";
+const STRIPE_PRICE = "$5";
 const NETWORK_TIMEOUT_MS = 15000;
 
 async function fetchWithTimeout(

@@ -1,4 +1,4 @@
-export const CHECKOUT_PRICE = 7;
+export const CHECKOUT_PRICE = 5;
 export const STORAGE_KEYS = {
   transactions: "sop.transactions",
   recurring: "sop.recurring",

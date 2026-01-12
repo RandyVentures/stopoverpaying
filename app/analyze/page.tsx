@@ -24,7 +24,7 @@ interface AiMatch {
   confidence: number;
 }
 
-const STRIPE_PRICE = "$7";
+const STRIPE_PRICE = "$5";
 const MAX_UPLOAD_BYTES = 10 * 1024 * 1024;
 const NETWORK_TIMEOUT_MS = 15000;
 const CSV_EXAMPLE = `Date,Description,Amount
