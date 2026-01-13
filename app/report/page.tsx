@@ -214,6 +214,14 @@ export default function ReportPage() {
     bestOption?: SavingsOption
   ) => {
     const key = `${service}-${action}`;
+    if (actionPlans[key] && actionPlans[key]?.status !== "loading") {
+      setActionPlans((prev) => {
+        const next = { ...prev };
+        delete next[key];
+        return next;
+      });
+      return;
+    }
     if (!devUnlock && !paidToken) {
       setActionPlans((prev) => ({
         ...prev,
@@ -505,22 +513,33 @@ export default function ReportPage() {
                         ))}
                       </div>
                       <div className="mt-4 flex flex-wrap items-center gap-3">
-                        <Button
-                          variant="secondary"
-                          onClick={() =>
-                            handleActionPlan("cancel", item.service, item.options, item.bestOption)
-                          }
-                        >
-                          Cancel with AI
-                        </Button>
-                        <Button
-                          variant="outline"
-                          onClick={() =>
-                            handleActionPlan("downgrade", item.service, item.options, item.bestOption)
-                          }
-                        >
-                          Lower price with AI
-                        </Button>
+                        {(() => {
+                          const cancelKey = `${item.service}-cancel`;
+                          const downgradeKey = `${item.service}-downgrade`;
+                          const cancelOpen = Boolean(actionPlans[cancelKey]);
+                          const downgradeOpen = Boolean(actionPlans[downgradeKey]);
+
+                          return (
+                            <>
+                              <Button
+                                variant="secondary"
+                                onClick={() =>
+                                  handleActionPlan("cancel", item.service, item.options, item.bestOption)
+                                }
+                              >
+                                {cancelOpen ? "Hide cancel plan" : "Cancel with AI"}
+                              </Button>
+                              <Button
+                                variant="outline"
+                                onClick={() =>
+                                  handleActionPlan("downgrade", item.service, item.options, item.bestOption)
+                                }
+                              >
+                                {downgradeOpen ? "Hide downgrade plan" : "Lower price with AI"}
+                              </Button>
+                            </>
+                          );
+                        })()}
                       </div>
                       {(["cancel", "downgrade"] as const).map((actionType) => {
                         const key = `${item.service}-${actionType}`;
