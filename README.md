@@ -8,6 +8,12 @@ A privacy-first web app that analyzes bank statements to identify recurring char
 
 ---
 
+## 🖼️ Screenshot
+
+![Landing page](public/landing-page.png)
+
+---
+
 ## 🎯 What It Does
 
 1. **Upload** your bank statement (CSV or PDF)
