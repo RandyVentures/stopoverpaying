@@ -10,7 +10,7 @@ A privacy-first web app that analyzes bank statements to identify recurring char
 
 ## 🖼️ Screenshot
 
-![Landing page](public/landing-page.png)
+![Landing page](public/landing-page.jpg)
 
 ---
 
