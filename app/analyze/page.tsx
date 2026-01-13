@@ -13,7 +13,7 @@ import { STORAGE_KEYS } from "@/lib/constants";
 import { matchRecurringCharges } from "@/lib/matching";
 import { findRecurringCharges } from "@/lib/recurring";
 import { buildSavingsReport } from "@/lib/report";
-import { clearExpired, clearStorage, loadWithExpiry, saveWithExpiry } from "@/lib/storage";
+import { saveSecure, clearExpired, clearStorage, loadWithExpiry, saveWithExpiry } from "@/lib/secure-storage";
 import { findSubscriptionByName } from "@/lib/subscriptions";
 import type { MatchedService, SavingsReport, Transaction } from "@/lib/types";
 import { formatCurrency, sortBy } from "@/lib/utils";
@@ -209,9 +209,10 @@ export default function AnalyzePage() {
       return;
     }
 
-    saveWithExpiry(STORAGE_KEYS.report, nextReport);
-    saveWithExpiry(STORAGE_KEYS.matches, nextMatches);
-    saveWithExpiry(STORAGE_KEYS.recurring, recurring);
+    // Save sensitive financial data with encryption
+    saveSecure(STORAGE_KEYS.report, nextReport);
+    saveSecure(STORAGE_KEYS.matches, nextMatches);
+    saveSecure(STORAGE_KEYS.recurring, recurring);
 
     setMatches(nextMatches);
     setReport(nextReport);

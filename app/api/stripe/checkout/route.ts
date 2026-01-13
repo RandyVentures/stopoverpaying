@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import Stripe from "stripe";
 
 import { CHECKOUT_PRICE } from "@/lib/constants";
+import { checkoutRateLimiter, getClientIdentifier, createRateLimitResponse } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
 
@@ -10,6 +11,14 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? "", {
 });
 
 export async function POST(request: Request) {
+  // Rate limiting
+  const clientId = getClientIdentifier(request);
+  const rateLimitResult = checkoutRateLimiter.check(clientId);
+  
+  if (!rateLimitResult.success) {
+    return createRateLimitResponse(rateLimitResult);
+  }
+
   if (!process.env.STRIPE_SECRET_KEY) {
     return NextResponse.json({ error: "Stripe key missing" }, { status: 500 });
   }

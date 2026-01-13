@@ -3,6 +3,7 @@ import { Anthropic } from "@anthropic-ai/sdk";
 
 import database from "@/data/subscriptions.json";
 import type { SubscriptionsDatabase } from "@/lib/types";
+import { claudeRateLimiter, getClientIdentifier, createRateLimitResponse } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
 
@@ -44,6 +45,14 @@ function safeJsonParse(raw: string) {
 }
 
 export async function POST(request: Request) {
+  // Rate limiting
+  const clientId = getClientIdentifier(request);
+  const rateLimitResult = claudeRateLimiter.check(clientId);
+  
+  if (!rateLimitResult.success) {
+    return createRateLimitResponse(rateLimitResult);
+  }
+
   const { patterns } = (await request.json()) as { patterns?: string[] };
 
   if (!process.env.ANTHROPIC_API_KEY) {

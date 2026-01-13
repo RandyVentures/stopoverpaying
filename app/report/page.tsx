@@ -12,7 +12,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { Toggle } from "@/components/Toggle";
 import { STORAGE_KEYS } from "@/lib/constants";
 import { buildSavingsReport } from "@/lib/report";
-import { clearExpired, loadWithExpiry, saveWithExpiry } from "@/lib/storage";
+import { clearExpiredSecure, loadSecure, saveSecure, loadWithExpiry, saveWithExpiry } from "@/lib/secure-storage";
 import type { MatchedService, SavingsReport } from "@/lib/types";
 import { formatCurrency } from "@/lib/utils";
 
@@ -46,17 +46,18 @@ export default function ReportPage() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    clearExpired([
+    // Clear expired sensitive data (encrypted)
+    clearExpiredSecure([
       STORAGE_KEYS.report,
       STORAGE_KEYS.matches,
       STORAGE_KEYS.recurring,
       STORAGE_KEYS.preview,
-      STORAGE_KEYS.paid
     ]);
 
-    const paidFlag = loadWithExpiry<boolean>(STORAGE_KEYS.paid);
-    const storedReport = loadWithExpiry<SavingsReport>(STORAGE_KEYS.report);
-    const storedMatches = loadWithExpiry<MatchedService[]>(STORAGE_KEYS.matches);
+    // Load sensitive data with encryption
+    const paidFlag = loadWithExpiry<boolean>(STORAGE_KEYS.paid); // Non-sensitive
+    const storedReport = loadSecure<SavingsReport>(STORAGE_KEYS.report); // Sensitive: encrypted
+    const storedMatches = loadSecure<MatchedService[]>(STORAGE_KEYS.matches); // Sensitive: encrypted
 
     if (storedReport) {
       setReport(storedReport);

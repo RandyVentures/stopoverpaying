@@ -1,4 +1,5 @@
 import { Transaction } from "@/lib/types";
+import { sanitizeCell } from "@/lib/file-validation";
 
 const dateKeys = [
   "date",
@@ -102,11 +103,15 @@ export async function parseCsvTransactions(csvText: string): Promise<Transaction
 
       if (!merchant || Number.isNaN(date.getTime())) return null;
 
+      // Sanitize fields to prevent CSV injection
+      const sanitizedMerchant = sanitizeCell(merchant.trim());
+      const sanitizedCategory = sanitizeCell(row["Category"] || row["category"] || "");
+
       return {
         date,
-        merchant: merchant.trim(),
+        merchant: sanitizedMerchant,
         amount: Math.abs(amount),
-        category: row["Category"] || row["category"],
+        category: sanitizedCategory,
         raw: JSON.stringify(row)
       } satisfies Transaction;
     })
