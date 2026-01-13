@@ -99,58 +99,76 @@ export default function AnalyzePage() {
     return sortBy(report.items, (item) => item.annualSavings).slice(0, 5);
   }, [report]);
 
-  const handleFile = async (file: File) => {
+  const handleFiles = async (files: FileList) => {
     setStatus("parsing");
     setError(null);
     setShowCsvExample(false);
     setAiUsed(false);
     setAiMessage(null);
 
-    let transactions: Transaction[] = [];
-    const fileName = file.name.toLowerCase();
-    const isCsv = fileName.endsWith(".csv");
-    const isPdf = fileName.endsWith(".pdf");
-
-    if (file.size > MAX_UPLOAD_BYTES) {
+    const filesToParse = Array.from(files);
+    if (filesToParse.length < 2 || filesToParse.length > 3) {
       setStatus("error");
-      setError("That file is over 10MB. Please export a smaller statement.");
+      setError("Please upload 2-3 statements so we can verify recurring charges.");
       return;
     }
+    let allTransactions: Transaction[] = [];
 
-    try {
-      if (isCsv) {
-        const text = await file.text();
-        const { parseCsvTransactions } = await import("@/lib/parsers/csv");
-        transactions = await parseCsvTransactions(text);
-      } else if (isPdf) {
-        const { parsePdfTransactions } = await import("@/lib/parsers/pdf");
-        transactions = await parsePdfTransactions(file);
-      } else {
+    for (const file of filesToParse) {
+      let transactions: Transaction[] = [];
+      const fileName = file.name.toLowerCase();
+      const isCsv = fileName.endsWith(".csv");
+      const isPdf = fileName.endsWith(".pdf");
+
+      if (file.size > MAX_UPLOAD_BYTES) {
         setStatus("error");
-        setError("That file type is not supported. Please upload a CSV or PDF.");
+        setError(`${file.name} is over 10MB. Please export a smaller statement.`);
         return;
       }
-    } catch {
-      setStatus("error");
-      if (isCsv) {
-        setError("We couldn't read that CSV. Check the column headers and try again.");
-        setShowCsvExample(true);
-      } else {
-        setError("We couldn't read that PDF statement. Try exporting a fresh copy.");
+
+      try {
+        if (isCsv) {
+          const text = await file.text();
+          const { parseCsvTransactions } = await import("@/lib/parsers/csv");
+          transactions = await parseCsvTransactions(text);
+        } else if (isPdf) {
+          const { parsePdfTransactions } = await import("@/lib/parsers/pdf");
+          transactions = await parsePdfTransactions(file);
+        } else {
+          setStatus("error");
+          setError("That file type is not supported. Please upload a CSV or PDF.");
+          return;
+        }
+      } catch {
+        setStatus("error");
+        if (isCsv) {
+          setError(`We couldn't read ${file.name}. Check the column headers and try again.`);
+          setShowCsvExample(true);
+        } else {
+          setError(`We couldn't read ${file.name}. Try exporting a fresh copy.`);
+        }
+        return;
       }
+
+      if (!transactions.length) {
+        setStatus("error");
+        setError(`We couldn't find any transactions in ${file.name}. Try another export.`);
+        if (isCsv) {
+          setShowCsvExample(true);
+        }
+        return;
+      }
+
+      allTransactions = allTransactions.concat(transactions);
+    }
+
+    if (!allTransactions.length) {
+      setStatus("error");
+      setError("We couldn't find any transactions in those files. Try another export.");
       return;
     }
 
-    if (!transactions.length) {
-      setStatus("error");
-      setError("We couldn't find any transactions in that file. Try another export.");
-      if (isCsv) {
-        setShowCsvExample(true);
-      }
-      return;
-    }
-
-    const recurring = findRecurringCharges(transactions);
+    const recurring = findRecurringCharges(allTransactions);
     if (!recurring.length) {
       setStatus("error");
       setError(
@@ -302,7 +320,7 @@ export default function AnalyzePage() {
           <div className="space-y-6">
             <Badge>Private analysis</Badge>
             <h1 className="font-heading text-4xl font-semibold leading-tight text-ink md:text-5xl">
-              Upload a statement. We find the bills you can shrink.
+              Upload 2-3 statements. We find the bills you can shrink.
             </h1>
             <p className="text-lg text-slate">
               CSV and PDF parsing happens entirely in your browser. We only send
@@ -313,23 +331,24 @@ export default function AnalyzePage() {
                 className="w-full text-sm text-slate"
                 type="file"
                 accept=".csv,.pdf"
+                multiple
                 disabled={status === "parsing"}
                 onChange={(event) => {
-                  const file = event.target.files?.[0];
-                  if (file) {
-                    void handleFile(file);
+                  const selectedFiles = event.target.files;
+                  if (selectedFiles && selectedFiles.length > 0) {
+                    void handleFiles(selectedFiles);
                   }
                 }}
               />
               <p className="mt-3 text-xs text-slate">
                 Supported banks: Chase, Bank of America, Capital One, Amex, Wells
-                Fargo. Use 2-3 months of statements for best results. Max file size
-                10MB.
+                Fargo. Upload 2-3 statements for best results. Max file size 10MB
+                each.
               </p>
             </div>
             {status === "parsing" && (
               <Card className="bg-white/80">
-                <p className="text-sm text-slate">Parsing statement and detecting patterns...</p>
+                <p className="text-sm text-slate">Parsing statements and detecting patterns...</p>
                 <div className="mt-4 animate-pulse space-y-3">
                   <div className="h-3 w-2/3 rounded-full bg-slate/20" />
                   <div className="h-3 w-full rounded-full bg-slate/20" />
