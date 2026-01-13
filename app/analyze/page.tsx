@@ -9,7 +9,7 @@ import { Card } from "@/components/Card";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { buildAnonymizedPatterns } from "@/lib/anonymize";
-import { STORAGE_KEYS } from "@/lib/constants";
+import { STORAGE_KEYS, STRIPE_DISPLAY_PRICE } from "@/lib/constants";
 import { matchRecurringCharges } from "@/lib/matching";
 import { findRecurringCharges } from "@/lib/recurring";
 import { buildSavingsReport } from "@/lib/report";
@@ -23,8 +23,6 @@ interface AiMatch {
   service_name: string | null;
   confidence: number;
 }
-
-const STRIPE_PRICE = "$5";
 const MAX_UPLOAD_BYTES = 10 * 1024 * 1024;
 const NETWORK_TIMEOUT_MS = 15000;
 const CSV_EXAMPLE = `Date,Description,Amount
@@ -383,7 +381,7 @@ export default function AnalyzePage() {
                     >
                       {checkoutStatus === "loading"
                         ? "Opening checkout..."
-                        : `Unlock full report (${STRIPE_PRICE})`}
+                        : `Unlock full report (${STRIPE_DISPLAY_PRICE})`}
                     </Button>
                     <Link href="/report" className="text-sm text-slate underline">
                       View report

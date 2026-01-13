@@ -4,10 +4,10 @@ import { Anthropic } from "@anthropic-ai/sdk";
 import database from "@/data/subscriptions.json";
 import type { SubscriptionsDatabase } from "@/lib/types";
 import { claudeRateLimiter, getClientIdentifier, createRateLimitResponse } from "@/lib/rate-limit";
+import { LIMITS } from "@/lib/constants";
 
 export const runtime = "nodejs";
 
-const MAX_PATTERNS = 60;
 const MODEL = process.env.CLAUDE_MODEL ?? "claude-3-5-sonnet-latest";
 
 function buildCatalog() {
@@ -66,7 +66,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ matches: [] });
   }
 
-  const clipped = patterns.slice(0, MAX_PATTERNS);
+  const clipped = patterns.slice(0, LIMITS.MAX_PATTERNS_PER_REQUEST);
   const catalog = buildCatalog();
 
   const system =
@@ -81,7 +81,7 @@ export async function POST(request: Request) {
     const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
     const response = await client.messages.create({
       model: MODEL,
-      max_tokens: 1200,
+      max_tokens: LIMITS.CLAUDE_MAX_TOKENS,
       system,
       messages: [{ role: "user", content: user }]
     });

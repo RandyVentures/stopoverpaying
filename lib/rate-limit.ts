@@ -75,15 +75,17 @@ class RateLimiter {
   }
 }
 
+import { RATE_LIMITS } from "./constants";
+
 // Rate limiters for different endpoints
 export const claudeRateLimiter = new RateLimiter(
-  10, // 10 requests
-  60_000 // per minute
+  RATE_LIMITS.CLAUDE_REQUESTS_PER_MINUTE,
+  RATE_LIMITS.WINDOW_MS
 );
 
 export const checkoutRateLimiter = new RateLimiter(
-  5, // 5 requests
-  60_000 // per minute
+  RATE_LIMITS.CHECKOUT_REQUESTS_PER_MINUTE,
+  RATE_LIMITS.WINDOW_MS
 );
 
 /**

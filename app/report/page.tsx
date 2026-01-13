@@ -10,38 +10,19 @@ import { Card } from "@/components/Card";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Toggle } from "@/components/Toggle";
-import { STORAGE_KEYS } from "@/lib/constants";
+import { STORAGE_KEYS, STRIPE_DISPLAY_PRICE } from "@/lib/constants";
 import { buildSavingsReport } from "@/lib/report";
-import { clearExpiredSecure, loadSecure, saveSecure, loadWithExpiry, saveWithExpiry } from "@/lib/secure-storage";
+import { clearExpiredSecure, loadSecure, loadWithExpiry, saveWithExpiry } from "@/lib/secure-storage";
 import type { MatchedService, SavingsReport } from "@/lib/types";
 import { formatCurrency } from "@/lib/utils";
-
-const STRIPE_PRICE = "$5";
-const NETWORK_TIMEOUT_MS = 15000;
-
-async function fetchWithTimeout(
-  input: RequestInfo | URL,
-  init: RequestInit,
-  timeoutMs = NETWORK_TIMEOUT_MS
-) {
-  const controller = new AbortController();
-  const timeoutId = window.setTimeout(() => controller.abort(), timeoutMs);
-
-  try {
-    return await fetch(input, { ...init, signal: controller.signal });
-  } finally {
-    window.clearTimeout(timeoutId);
-  }
-}
+import { initiateCheckout, type CheckoutStatus } from "@/lib/checkout";
 
 export default function ReportPage() {
   const [report, setReport] = useState<SavingsReport | null>(null);
   const [paid, setPaid] = useState(false);
   const [blurred, setBlurred] = useState(false);
   const [hydrated, setHydrated] = useState(false);
-  const [checkoutStatus, setCheckoutStatus] = useState<"idle" | "loading" | "error">(
-    "idle"
-  );
+  const [checkoutStatus, setCheckoutStatus] = useState<CheckoutStatus>("idle");
   const [checkoutError, setCheckoutError] = useState<string | null>(null);
   const searchParams = useSearchParams();
 
@@ -103,51 +84,11 @@ export default function ReportPage() {
     setCheckoutStatus("loading");
     setCheckoutError(null);
 
-    try {
-      const response = await fetchWithTimeout(
-        "/api/stripe/checkout",
-        {
-          method: "POST"
-        },
-        NETWORK_TIMEOUT_MS
-      );
-      if (!response.ok) {
-        setCheckoutStatus("error");
-        setCheckoutError("Checkout failed. Please try again.");
-        return;
-      }
+    const result = await initiateCheckout();
 
-      const payload = (await response.json()) as {
-        url?: string;
-        sessionId?: string;
-      };
-      const publishableKey = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
-
-      if (publishableKey && payload.sessionId) {
-        const { loadStripe } = await import("@stripe/stripe-js");
-        const stripe = await loadStripe(publishableKey);
-        const result = await stripe?.redirectToCheckout({ sessionId: payload.sessionId });
-        if (result?.error) {
-          setCheckoutStatus("error");
-          setCheckoutError(result.error.message ?? "Stripe checkout failed.");
-        }
-        return;
-      }
-
-      if (payload.url) {
-        window.location.href = payload.url;
-        return;
-      }
-
+    if (!result.success) {
       setCheckoutStatus("error");
-      setCheckoutError("Checkout could not be started. Missing session details.");
-    } catch (error) {
-      setCheckoutStatus("error");
-      if (error instanceof DOMException && error.name === "AbortError") {
-        setCheckoutError("Network timed out. Please try again.");
-      } else {
-        setCheckoutError("Checkout failed. Please try again.");
-      }
+      setCheckoutError(result.error || "Checkout failed. Please try again.");
     }
   };
 
@@ -221,7 +162,7 @@ export default function ReportPage() {
                   {formatCurrency(report.totalPotentialSavings)} / year
                 </p>
                 <p className="mt-2 text-sm text-slate">
-                  Unlock the full report and negotiation scripts for {STRIPE_PRICE}.
+                  Unlock the full report and negotiation scripts for {STRIPE_DISPLAY_PRICE}.
                 </p>
               </div>
               <Button
@@ -231,7 +172,7 @@ export default function ReportPage() {
               >
                 {checkoutStatus === "loading"
                   ? "Opening checkout..."
-                  : `Unlock full report (${STRIPE_PRICE})`}
+                  : `Unlock full report (${STRIPE_DISPLAY_PRICE})`}
               </Button>
             </div>
             {checkoutError && (

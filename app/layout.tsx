@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Fraunces, Space_Grotesk } from "next/font/google";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 
 const bodyFont = Space_Grotesk({
   subsets: ["latin"],
@@ -43,7 +44,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <div className="absolute -top-40 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-gradient-to-br from-sea/25 via-sand/20 to-transparent blur-3xl" />
           <div className="absolute bottom-0 right-0 h-[420px] w-[420px] translate-x-1/3 rounded-full bg-gradient-to-br from-coral/20 via-sand/20 to-transparent blur-3xl" />
         </div>
-        {children}
+        <ErrorBoundary>
+          {children}
+        </ErrorBoundary>
       </body>
     </html>
   );
