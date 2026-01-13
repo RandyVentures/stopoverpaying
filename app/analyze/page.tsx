@@ -81,7 +81,7 @@ export default function AnalyzePage() {
       STORAGE_KEYS.matches,
       STORAGE_KEYS.recurring,
       STORAGE_KEYS.preview,
-      STORAGE_KEYS.paid
+      STORAGE_KEYS.paidToken
     ]);
 
     const storedReport = loadWithExpiry<SavingsReport>(STORAGE_KEYS.report);
@@ -161,7 +161,7 @@ export default function AnalyzePage() {
     let nextMatches = matchRecurringCharges(recurring);
 
     try {
-      setAiMessage("Checking anonymized patterns with Claude...");
+      setAiMessage("Checking anonymized patterns with AI...");
       const patterns = buildAnonymizedPatterns(recurring);
       const response = await fetchWithTimeout(
         "/api/claude",
@@ -179,21 +179,21 @@ export default function AnalyzePage() {
         if (payload.matches?.length) {
           nextMatches = mergeAiMatches(nextMatches, payload.matches);
           setAiUsed(true);
-          setAiMessage("Claude improved the merchant matches.");
+          setAiMessage("AI improved the merchant matches.");
         } else {
           setAiUsed(false);
-          setAiMessage("Claude returned no matches. Using local fuzzy matching.");
+          setAiMessage("AI returned no matches. Using local fuzzy matching.");
         }
       } else {
         setAiUsed(false);
-        setAiMessage("Claude unavailable. Using local fuzzy matching.");
+        setAiMessage("AI unavailable. Using local fuzzy matching.");
       }
     } catch (error) {
       setAiUsed(false);
       if (error instanceof DOMException && error.name === "AbortError") {
-        setAiMessage("Claude check timed out. Using local fuzzy matching.");
+        setAiMessage("AI check timed out. Using local fuzzy matching.");
       } else {
-        setAiMessage("Claude unavailable. Using local fuzzy matching.");
+        setAiMessage("AI unavailable. Using local fuzzy matching.");
       }
     }
 
@@ -275,7 +275,7 @@ export default function AnalyzePage() {
       STORAGE_KEYS.matches,
       STORAGE_KEYS.recurring,
       STORAGE_KEYS.preview,
-      STORAGE_KEYS.paid
+      STORAGE_KEYS.paidToken
     ]);
     setReport(null);
     setMatches([]);
@@ -291,8 +291,8 @@ export default function AnalyzePage() {
   const aiCopy =
     aiMessage ??
     (aiUsed
-      ? "Claude matched anonymized patterns to services in the database."
-      : "Local fuzzy matching used. Claude can improve matches with an API key.");
+      ? "AI matched anonymized patterns to services in the database."
+      : "Local fuzzy matching used. AI can improve matches with an API key.");
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -306,7 +306,7 @@ export default function AnalyzePage() {
             </h1>
             <p className="text-lg text-slate">
               CSV and PDF parsing happens entirely in your browser. We only send
-              anonymized patterns to Claude, never raw transactions.
+              anonymized patterns to the AI, never raw transactions.
             </p>
             <div className="rounded-3xl border border-dashed border-slate/30 bg-white/70 p-6">
               <input
@@ -453,7 +453,7 @@ export default function AnalyzePage() {
               </p>
               <ul className="text-xs text-slate">
                 <li>Raw transactions never hit our servers.</li>
-                <li>Patterns sent to Claude include only merchant + amount.</li>
+                <li>Patterns sent to the AI include only merchant + amount.</li>
                 <li>Delete your data anytime with one click.</li>
               </ul>
             </Card>

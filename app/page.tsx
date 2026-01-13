@@ -154,7 +154,7 @@ export default function HomePage() {
                   a: "No. We do not sell or rent data, and raw statements never leave your device."
                 },
                 {
-                  q: "What data is sent to Claude?",
+                  q: "What data is sent to the AI?",
                   a: "Only anonymized patterns like MERCHANT $AMOUNT and frequency. No raw transaction lines."
                 },
                 {

@@ -41,7 +41,7 @@
               "savings_monthly": 8.5,
               "savings_annual": 102,
               "effort": "easy",
-              "link": "https://www.netflix.com/changewplan",
+              "link": "https://www.netflix.com/changeplan",
               "affiliate": false,
               "instructions": "Log in -> Account -> Change Plan -> Select Standard with Ads ($6.99/mo)"
             },
@@ -135,7 +135,7 @@
               "savings_monthly": 4,
               "savings_annual": 48,
               "effort": "easy",
-              "link": "https://www.disneyplus.com/welcome/bundle",
+              "link": "https://www.disneyplus.com/welcome/disney-hulu-espn-bundle",
               "affiliate": false,
               "instructions": "Get Disney+ and Hulu bundle for $9.99/mo (saves $4/mo if you have both)"
             }
@@ -424,7 +424,7 @@
               "savings_monthly": 7.5,
               "savings_annual": 90,
               "effort": "easy",
-              "link": "https://www.amazon.com/prime/student",
+              "link": "https://www.amazon.com/amazonprime?primeCampaignId=student",
               "affiliate": false,
               "instructions": "Prime Student is about half price"
             }
@@ -2823,7 +2823,7 @@
               "savings_monthly": 9.99,
               "savings_annual": 120,
               "effort": "medium",
-              "link": "https://www.chase.com/personal/credit-cards/sapphire/reserve",
+              "link": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
               "affiliate": true,
               "affiliate_id": "TBD",
               "instructions": "Chase Sapphire Reserve includes complimentary DashPass"
@@ -3132,7 +3132,7 @@
               "savings_monthly": 2,
               "savings_annual": 24,
               "effort": "easy",
-              "link": "https://www.amazon.com/kindle-unlimited",
+              "link": "https://www.amazon.com/kindle-dbs/hz/subscribe/ku",
               "affiliate": true,
               "affiliate_id": "TBD",
               "instructions": "Annual plan is often \u00019.88/year (~.99/mo)"

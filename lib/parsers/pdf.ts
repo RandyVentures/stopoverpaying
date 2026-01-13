@@ -34,10 +34,26 @@ export async function parsePdfTransactions(file: File): Promise<Transaction[]> {
   const buffer = await file.arrayBuffer();
 
   try {
-    const pdfParseModule = await import("pdf-parse");
-    const pdfParse = pdfParseModule.default;
-    const data = await pdfParse(new Uint8Array(buffer));
-    return parseText(data.text || "");
+    const pdfjs = await import("pdfjs-dist/legacy/build/pdf");
+    pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+      "pdfjs-dist/legacy/build/pdf.worker.min.mjs",
+      import.meta.url
+    ).toString();
+    const loadingTask = pdfjs.getDocument({ data: buffer });
+    const pdf = await loadingTask.promise;
+
+    let text = "";
+    for (let pageIndex = 1; pageIndex <= pdf.numPages; pageIndex += 1) {
+      const page = await pdf.getPage(pageIndex);
+      const content = await page.getTextContent();
+      const pageText = content.items
+        .map((item) => ("str" in item ? item.str : ""))
+        .filter(Boolean)
+        .join(" ");
+      text += `${pageText}\n`;
+    }
+
+    return parseText(text);
   } catch {
     return [];
   }

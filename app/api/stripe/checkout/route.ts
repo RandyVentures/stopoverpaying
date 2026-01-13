@@ -32,7 +32,7 @@ export async function POST(request: Request) {
     : null;
   const origin =
     request.headers.get("origin") ?? normalizedSiteUrl ?? "http://localhost:3000";
-  const successUrl = `${origin}/report?paid=true`;
+  const successUrl = `${origin}/report?session_id={CHECKOUT_SESSION_ID}`;
   const cancelUrl = `${origin}/analyze`;
 
   try {

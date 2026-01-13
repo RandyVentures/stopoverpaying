@@ -5,7 +5,7 @@ export const STORAGE_KEYS = {
   recurring: "sop.recurring",
   matches: "sop.matches",
   report: "sop.report",
-  paid: "sop.paid",
+  paidToken: "sop.paidToken",
   preview: "sop.preview"
 } as const;
 
